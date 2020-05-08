@@ -1,17 +1,19 @@
-import React from 'react';
-import SimpleHero from '../SimpleHero/SimpleHero';
-import Banner from '../Banner/Banner';
+import React, { Component } from 'react';
 
-const BoxGenerator = () => {
-    return (
-        <div>
-            <SimpleHero>
-                <Banner>
-                    hello
-                </Banner>
-            </SimpleHero>
-        </div>
-    );
-};
+class BoxGenerator extends Component {
+    render() {
+        return (
+            <div>
+            <div style={{
+                height: `${this.props.height}em`,
+                width: `${this.props.width}em`,
+                backgroundColor: this.props.color
+            }}>
+            <button>Remove The Box</button>
+            </div>
+            </div>
+        );
+    }
+}
 
 export default BoxGenerator;

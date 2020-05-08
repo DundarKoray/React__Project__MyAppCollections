@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FlipCoin from './FlipCoin/CoinContainer';
 import HangMan from './HangMan/Hangman';
 import ColorBoxes from './ColorBoxes/BoxContainer';
-import BoxGenerator from './BoxGenerator/BoxGenerator'
+import BoxGenerator from './BoxGenerator/App'
 
 const App = () => {
   return (
