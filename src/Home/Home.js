@@ -1,10 +1,8 @@
 import React from 'react';
 import SimpleHero from "../SimpleHero/SimpleHero";
 import Banner from "../Banner/Banner";
-import FlipCoin from '../FlipCoin/CoinContainer'
 import { Link } from "react-router-dom";
-import { Route, Switch } from "react-router-dom";
-import Layout from '../Layout';
+
 import './home.css'
 const Home = () => {
     return (

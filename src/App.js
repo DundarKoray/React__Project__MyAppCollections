@@ -14,10 +14,10 @@ const App = () => {
 
       <Switch>
         <Route exact path="/" component={Home} exact />
-        <Route exact path="/flipCoin" component={FlipCoin} exact />
-        <Route exact path="/hangMan" component={HangMan} exact />
-        <Route exact path="/colorBoxes" component={ColorBoxes} exact />
-        <Route exact path="/boxGenerator" component={BoxGenerator} exact />
+        <Route  path="/flipCoin" component={FlipCoin} exact />
+        <Route  path="/hangMan" component={HangMan} exact />
+        <Route  path="/colorBoxes" component={ColorBoxes} exact />
+        <Route  path="/boxGenerator" component={BoxGenerator} exact />
       </Switch>
     </Layout>
     </BrowserRouter>
