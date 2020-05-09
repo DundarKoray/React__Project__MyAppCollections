@@ -6,6 +6,7 @@ import FlipCoin from './FlipCoin/CoinContainer';
 import HangMan from './HangMan/Hangman';
 import ColorBoxes from './ColorBoxes/BoxContainer';
 import BoxGenerator from './BoxGenerator/App'
+import SlotMachine from './SlotMachine/SlotMachineContainer'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route  path="/hangMan" component={HangMan} exact />
         <Route  path="/colorBoxes" component={ColorBoxes} exact />
         <Route  path="/boxGenerator" component={BoxGenerator} exact />
+        <Route  path="/slotMachine" component={SlotMachine} exact />
       </Switch>
     </Layout>
     </BrowserRouter>

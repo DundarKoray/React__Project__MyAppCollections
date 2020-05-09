@@ -22,6 +22,7 @@ const Home = () => {
             <Link style={{margin:"10px"}}className="btn-primary" to="/hangMan">Hang Man</Link>
             <Link style={{margin:"10px"}}className="btn-primary" to="/colorBoxes">Color Boxes</Link>
             <Link style={{margin:"10px"}}className="btn-primary" to="/boxGenerator">Box Generator</Link>
+            <Link style={{margin:"10px"}}className="btn-primary" to="/slotMachine">Slot Machine</Link>
             
             </div>
 

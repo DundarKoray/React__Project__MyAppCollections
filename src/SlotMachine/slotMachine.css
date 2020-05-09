@@ -1,0 +1,25 @@
+.Machine {
+    /* border: 1px solid sandybrown; */
+    /* background-color: antiquewhite; */
+    text-align: center;
+  }
+  
+  .Slot {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .winner {
+    color: green;
+    font-size: 80px;
+  }
+  
+  .loser {
+    color: red;
+    font-size: 80px;
+  }
+  
+  .singleSlot {
+    border: yellow dashed 5px;
+    padding: 20px;
+  }
