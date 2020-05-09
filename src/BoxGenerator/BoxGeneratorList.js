@@ -5,7 +5,7 @@ import Form from "./Form";
 class BoxGeneratorList extends Component {
   constructor(props) {
     super(props);
-    this.state = {boxes: [{width: 10, height: 40, color: "orange"}],};
+    this.state = {boxes: [],};
     this.create = this.create.bind(this);
   }
 
@@ -15,6 +15,13 @@ class BoxGeneratorList extends Component {
     });
   }
 
+  remove(id) {
+    this.setState({
+        // it makes a new array without the id that is passed as parameter
+        boxes: this.state.boxes.filter(item => item.id !== id)
+    })
+  }
+
   render() {
     const boxes = this.state.boxes.map((item, index) => {
       return (
@@ -22,7 +29,9 @@ class BoxGeneratorList extends Component {
           height={item.height}
           width={item.width}
           color={item.color}
-          key={index}
+          key={item.id}
+          id={item.id}
+          removeBox={() => this.remove(item.id)}
         />
       );
     });

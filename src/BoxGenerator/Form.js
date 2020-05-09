@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { v4 as uuidv4 } from "uuid"
 
 class Form extends Component {
   constructor(props) {
@@ -8,11 +9,14 @@ class Form extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(e) {
-      e.preventDefault();
-    this.props.createBox(this.state)
+    e.preventDefault();
+    const newBox = { ...this.state, id: uuidv4() };
+    this.props.createBox(newBox);
     this.setState({
-        height: "", width: "", color: ""
-    })
+      height: "",
+      width: "",
+      color: "",
+    });
   }
 
   handleChange(e) {
@@ -22,8 +26,8 @@ class Form extends Component {
   }
   render() {
     return (
-        <form>
-            <div className="center">
+      <form>
+        <div className="center">
           <label>Height:</label>
           <input
             type="text"
@@ -31,7 +35,7 @@ class Form extends Component {
             value={this.state.height}
             onChange={this.handleChange}
             id="height"
-            style={{padding:".3rem",marginRight:"1rem"}}
+            style={{ padding: ".3rem", marginRight: "1rem" }}
           />
           <label>Width:</label>
           <input
@@ -40,7 +44,7 @@ class Form extends Component {
             value={this.state.width}
             onChange={this.handleChange}
             id="width"
-            style={{padding:".3rem", marginRight:"1rem"}}
+            style={{ padding: ".3rem", marginRight: "1rem" }}
           />
           <label>Color:</label>
           <input
@@ -49,11 +53,16 @@ class Form extends Component {
             value={this.state.color}
             onChange={this.handleChange}
             id="color"
-            style={{padding:".3rem",}}
-            
+            style={{ padding: ".3rem" }}
           />
         </div>
-        <button onClick={this.handleSubmit}  style={{marginTop:"1rem"}} className="btn-primary">Create A New Box</button>
+        <button
+          onClick={this.handleSubmit}
+          style={{ marginTop: "1rem" }}
+          className="btn-primary"
+        >
+          Create A New Box
+        </button>
       </form>
     );
   }

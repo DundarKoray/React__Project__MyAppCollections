@@ -9,7 +9,7 @@ class BoxGenerator extends Component {
                 width: `${this.props.width}em`,
                 backgroundColor: this.props.color
             }}>
-            <button>Remove The Box</button>
+            <button onClick={this.props.removeBox}>Remove The Box</button>
             </div>
             </div>
         );

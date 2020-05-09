@@ -13,7 +13,7 @@ const App = () => {
     <Layout>
 
       <Switch>
-        <Route exact path="/" component={Home} exact />
+        <Route exact path="/" component={Home} />
         <Route  path="/flipCoin" component={FlipCoin} exact />
         <Route  path="/hangMan" component={HangMan} exact />
         <Route  path="/colorBoxes" component={ColorBoxes} exact />
