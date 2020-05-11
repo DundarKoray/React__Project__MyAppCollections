@@ -50,6 +50,8 @@ class CoinContainer extends Component {
           heads and {this.state.nTails} tails.
         </p>
         {this.state.currCoin && <Coin info={this.state.currCoin} />}
+        <br />
+        <br />
         <button
           style={{ outline: "none" }}
           className="btn-primary"
@@ -57,10 +59,9 @@ class CoinContainer extends Component {
         >
           Flip Me!
         </button>
-        <br />
-        <br />
-        <br />
-        
+        <br></br>
+        <hr style={{marginTop: '15rem', marginBottom: '1rem'}}/>
+        <p><a target="_blank" rel="noopener noreferrer" className="btn-white" href="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/FlipCoin">See the source code</a></p>
       </div>
     );
   }

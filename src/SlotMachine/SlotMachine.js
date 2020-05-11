@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-import { FaArrowLeft} from 'react-icons/fa'
 import ButtonReturn from "../ButtonReturn/ButtonReturn";
-
+import "./slotMachine.css";
 class SlotMachine extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +11,7 @@ class SlotMachine extends React.Component {
       s1: "🍊",
       s2: "🍒",
       s3: "🍇",
-      message: ""
+      message: "Good Luck!"
     };
     this.roll = this.roll.bind(this);
   }
@@ -69,21 +67,21 @@ class SlotMachine extends React.Component {
          <ButtonReturn text="Back"/>
         <h1>Slot Machine</h1>
         <p>Do you feel lucky today? Give it a try!</p>
-        <h3>
-          <button className="btn-primary" onClick={this.roll}>Press to play</button>
-        </h3>
+        
         <p
           className="Slot"
-          style={{ fontSize: "80px", backgroundColor: "purple" }}
         >
           <span className="singleSlot">{this.state.s1}</span>
           <span className="singleSlot">{this.state.s2}</span>
           <span className="singleSlot">{this.state.s3}</span>
         </p>
-        <p className="winnerMessage">          
+        <button className="btn-primary" onClick={this.roll}>Press to play</button>
+        <p className="result">        
         {this.state.message === "You Win!" ? <span className="winner">{this.state.message}</span> :  <span className="loser">{this.state.message}</span> }
         </p>
-        <br />
+        
+        <hr style={{marginTop: '15rem', marginBottom: '1rem'}}/>
+        <p><a target="_blank" rel="noopener noreferrer" className="btn-white" href="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/SlotMachine">See the source code</a></p>
       </div>
     );
   }

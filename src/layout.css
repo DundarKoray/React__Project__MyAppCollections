@@ -48,7 +48,7 @@ a {
 .btn-primary {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  
+  outline: none;
   border: 1px solid var(--mainWhite);
   
   display: inline-block;
@@ -60,12 +60,6 @@ a {
   color: var(--primaryColor);
 }
 
-.btn-return {
-  position: absolute;
-  top: 2%; 
-  left: 2%; 
-  outline: none;
-}
 
 .btn-white{
   color: var(--mainWhite);

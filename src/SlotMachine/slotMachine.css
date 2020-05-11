@@ -2,24 +2,38 @@
     /* border: 1px solid sandybrown; */
     /* background-color: antiquewhite; */
     text-align: center;
+
   }
   
   .Slot {
+    min-width: 300px;
+    max-width: 600px;
+    padding: 1rem;
     display: flex;
+    margin: 0 auto 2rem auto;
+    font-size: 60px; 
+    background-color: purple;
     justify-content: space-around;
   }
   
   .winner {
     color: green;
-    font-size: 80px;
+    font-size: 40px;
+  
   }
   
   .loser {
+    
     color: red;
-    font-size: 80px;
+    font-size: 40px;
   }
   
   .singleSlot {
     border: yellow dashed 5px;
-    padding: 20px;
+    padding: .5rem;
+  
+  }
+
+  .result {
+    margin-top: 2rem;
   }
