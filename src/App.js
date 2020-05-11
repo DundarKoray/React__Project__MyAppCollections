@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "./Layout";
 import Home from "./Home/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import FlipCoin from './FlipCoin/CoinContainer';
+import FlipCoin from './FlipCoin/App';
 import HangMan from './HangMan/Hangman';
 import ColorBoxes from './ColorBoxes/App';
 import BoxGenerator from './BoxGenerator/App'
-import SlotMachine from './SlotMachine/SlotMachineContainer'
+import SlotMachine from './SlotMachine/App'
 import ToDoList from './ToDoList/App'
 const App = () => {
   return (

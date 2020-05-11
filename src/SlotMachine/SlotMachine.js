@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { FaArrowLeft} from 'react-icons/fa'
+import ButtonReturn from "../ButtonReturn/ButtonReturn";
 
 class SlotMachine extends React.Component {
   constructor(props) {
@@ -65,9 +66,9 @@ class SlotMachine extends React.Component {
 
     return (
       <div className="Machine">
-         <Link to="/" style={{marginBottom: "3rem"}}className="btn-white"><FaArrowLeft /> Back</Link>
+         <ButtonReturn text="Back"/>
         <h1>Slot Machine</h1>
-        <h2>Do you feel lucky today? Give it a try!</h2>
+        <p>Do you feel lucky today? Give it a try!</p>
         <h3>
           <button className="btn-primary" onClick={this.roll}>Press to play</button>
         </h3>
