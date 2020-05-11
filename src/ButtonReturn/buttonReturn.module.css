@@ -1,0 +1,27 @@
+:root {
+  --primaryColor: #d4a53f;
+  --mainWhite: #fff;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 4px;
+ 
+  
+}
+
+.btn {
+  color: var(--mainWhite);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  border: 1px solid var(--mainWhite);
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+  }

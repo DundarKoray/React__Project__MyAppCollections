@@ -4,7 +4,7 @@ import Home from "./Home/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FlipCoin from './FlipCoin/CoinContainer';
 import HangMan from './HangMan/Hangman';
-import ColorBoxes from './ColorBoxes/BoxContainer';
+import ColorBoxes from './ColorBoxes/App';
 import BoxGenerator from './BoxGenerator/App'
 import SlotMachine from './SlotMachine/SlotMachineContainer'
 import ToDoList from './ToDoList/App'
