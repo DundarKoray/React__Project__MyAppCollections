@@ -4,9 +4,9 @@ class SlotMachine extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      slotRandom1: 0,
-      slotRandom2: 0,
-      slotRandom3: 0,
+      slotRandom1: Math.floor(Math.random() * 3),
+      slotRandom2: Math.floor(Math.random() * 3),
+      slotRandom3: Math.floor(Math.random() * 3),
       s1: "🍊",
       s2: "🍒",
       s3: "🍇",
@@ -46,7 +46,7 @@ class SlotMachine extends React.Component {
     }
 
     const isWinner =
-      this.state.s1 === this.state.s2 && this.state.s2 === this.state.s3;
+      this.state.slotRandom1 === this.state.slotRandom2 && this.state.slotRandom2 === this.state.slotRandom3;
 
     if (isWinner) {
         this.setState({
