@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { v4 as uuidv4 } from "uuid"
 
+
 class Form extends Component {
   constructor(props) {
     super(props);
@@ -27,38 +28,41 @@ class Form extends Component {
   render() {
     return (
       <form>
-        <div className="center">
-          <label>Height:</label>
+        <div style={{display: "flex", flexDirection: "column", alignItems:"center", justifyContent:"center"}}>
+          
+
+          <label>Height</label>
           <input
             type="text"
             name="height"
             value={this.state.height}
             onChange={this.handleChange}
             id="height"
-            style={{ padding: ".3rem", marginRight: "1rem" }}
-          />
-          <label>Width:</label>
+            style={{  padding: ".3rem", marginBottom: "1rem" }}
+            />
+          <label>Width</label>
           <input
             type="text"
             name="width"
             value={this.state.width}
             onChange={this.handleChange}
             id="width"
-            style={{ padding: ".3rem", marginRight: "1rem" }}
-          />
-          <label>Color:</label>
+            style={{  padding: ".3rem", marginBottom: "1rem" }}
+            />
+          <label>Color</label>
           <input
             type="text"
             name="color"
             value={this.state.color}
             onChange={this.handleChange}
             id="color"
-            style={{ padding: ".3rem" }}
-          />
+            style={{  padding: ".3rem",marginBottom: "1rem" }}
+            />
+        
         </div>
         <button
           onClick={this.handleSubmit}
-          style={{ marginTop: "1rem" }}
+          style={{ margin: "1rem",  }}
           className="btn-primary"
         >
           Create A New Box

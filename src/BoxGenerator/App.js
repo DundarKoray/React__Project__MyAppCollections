@@ -1,7 +1,7 @@
 import React from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
-import { Link } from 'react-router-dom';
+
 import BoxGeneratorList from './BoxGeneratorList'
 
 const BoxGeneratorContainer = () => {
@@ -9,8 +9,7 @@ const BoxGeneratorContainer = () => {
         <div>
             <SimpleHero>
                 <Banner>
-                <Link to="/" className="btn-white btn-return">Return Home</Link>
-                <BoxGeneratorList />
+                    <BoxGeneratorList />
                 </Banner>
             </SimpleHero>
         </div>

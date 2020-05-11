@@ -2,7 +2,7 @@
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
-  
+  padding: 1rem;
 }
 
 

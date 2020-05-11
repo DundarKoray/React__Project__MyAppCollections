@@ -1,5 +1,5 @@
 .logo{
-  width: 70px;
+  width: 60px;
 }
 .nav-header {
   display: flex;
@@ -25,9 +25,11 @@
   transition: var(--mainTransition);
   height: 0;
   overflow: hidden;
+  text-align: center;
 }
 .show-nav {
-  height: 216px;
+  height: 50px;
+  text-align: center;
 }
 .nav-links a {
   display: block;

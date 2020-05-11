@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import BoxGenerator from "./BoxGenerator";
 import Form from "./Form";
+import { FaArrowLeft} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
+
 
 class BoxGeneratorList extends Component {
   constructor(props) {
@@ -25,6 +28,7 @@ class BoxGeneratorList extends Component {
   render() {
     const boxes = this.state.boxes.map((item, index) => {
       return (
+        
         <BoxGenerator
           height={item.height}
           width={item.width}
@@ -37,6 +41,8 @@ class BoxGeneratorList extends Component {
     });
     return (
       <div>
+        
+        <Link to="/" style={{marginBottom: "3rem"}}className="btn-white"><FaArrowLeft /> Back</Link>
         <h1>Color Box Generator</h1>
         <p>Insert values to create boxes</p>
         <Form createBox={this.create}/>

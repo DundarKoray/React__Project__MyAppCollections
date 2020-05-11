@@ -7,7 +7,7 @@ import HangMan from './HangMan/Hangman';
 import ColorBoxes from './ColorBoxes/BoxContainer';
 import BoxGenerator from './BoxGenerator/App'
 import SlotMachine from './SlotMachine/SlotMachineContainer'
-
+import ToDoList from './ToDoList/App'
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +20,7 @@ const App = () => {
         <Route  path="/colorBoxes" component={ColorBoxes} exact />
         <Route  path="/boxGenerator" component={BoxGenerator} exact />
         <Route  path="/slotMachine" component={SlotMachine} exact />
+        <Route  path="/toDoList" component={ToDoList} exact />
       </Switch>
     </Layout>
     </BrowserRouter>

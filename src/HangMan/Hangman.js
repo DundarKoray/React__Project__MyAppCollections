@@ -11,6 +11,8 @@ import img5 from "./5.jpg";
 import img6 from "./6.jpg";
 import SimpleHero from "../SimpleHero/SimpleHero";
 import Banner from "../Banner/Banner"
+import { FaArrowLeft} from 'react-icons/fa'
+
 
 class Hangman extends Component {
   /** by default, allow 6 guesses and use provided gallows images. */
@@ -89,10 +91,11 @@ class Hangman extends Component {
 
     return (
       <SimpleHero>
-        <Link to="/" className="btn-white btn-return">Return Home</Link>
+        
         <Banner>
 
       <div className='Hangman'>
+      <Link to="/" style={{marginBottom: "3rem"}}className="btn-white"><FaArrowLeft /> Back</Link>
         <h1>Hangman</h1>
         <img src={this.props.images[this.state.nWrong]} alt={altText} />
         <p>Guessed Wrong: {this.state.nWrong}</p>
@@ -110,7 +113,7 @@ class Hangman extends Component {
         : null
       }
         
-        <button id="reset" onClick={()=>this.reset()}>Restart</button>
+        <button style={{marginBottom:"1rem"}} id="reset" onClick={()=>this.reset()}>Restart</button>
       </div>
       </Banner>
       </SimpleHero>
