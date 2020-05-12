@@ -57,7 +57,7 @@ class FlipCoinV2 extends Component {
     return (
         
       <div>
-          <InnerNavBar text="back" />
+          <InnerNavBar text="back" link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/FlipCoinV2" />
         <h2>FLIP THE COIN V2</h2>
         <p>{this.state.count}</p>
         {/* <img className="boy-flipping-coin" src="https://res.cloudinary.com/koraydundar/image/upload/v1559739488/hand1_mqddvc.jpg"> */}
