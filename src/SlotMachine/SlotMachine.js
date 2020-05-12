@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonReturn from "../Buttons/ButtonReturn/ButtonReturn";
 import "./slotMachine.css";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 

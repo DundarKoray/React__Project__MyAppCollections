@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './footer.module.css'
-import links from '../constants/links'
+// import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
 // import { Link } from 'gatsby'
 // import AniLink from "gatsby-plugin-transition-link/AniLink"

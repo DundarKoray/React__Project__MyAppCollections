@@ -8,8 +8,6 @@ import img3 from "./3.jpg";
 import img4 from "./4.jpg";
 import img5 from "./5.jpg";
 import img6 from "./6.jpg";
-import SimpleHero from "../SimpleHero/SimpleHero";
-import Banner from "../Banner/Banner";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 
 class Hangman extends Component {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Box from "./Box";
 import "./BoxContainer.css";
-import ButtonReturn from "../Buttons/ButtonReturn/ButtonReturn";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 
 class BoxContainer extends Component {
