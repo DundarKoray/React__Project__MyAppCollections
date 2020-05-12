@@ -61,6 +61,13 @@ const Home = () => {
           >
             FlipCoin V2
           </Link>
+          <Link
+            style={{ margin: "10px", width: "250px" }}
+            className="btn-primary"
+            to="/whatToEat"
+          >
+            What to Eat
+          </Link>
         </div>
       </Banner>
     </SimpleHero>
