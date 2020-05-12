@@ -8,6 +8,7 @@ import ColorBoxes from './ColorBoxes/App';
 import BoxGenerator from './BoxGenerator/App'
 import SlotMachine from './SlotMachine/App'
 import ToDoList from './ToDoList/App'
+import FlipCoinV2 from './FlipCoinV2/App'
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ const App = () => {
         <Route  path="/boxGenerator" component={BoxGenerator} exact />
         <Route  path="/slotMachine" component={SlotMachine} exact />
         <Route  path="/toDoList" component={ToDoList} exact />
+        <Route  path="/flipCoinV2" component={FlipCoinV2} exact />
       </Switch>
     </Layout>
     </BrowserRouter>

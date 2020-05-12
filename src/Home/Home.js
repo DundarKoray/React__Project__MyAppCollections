@@ -54,6 +54,13 @@ const Home = () => {
           >
             ToDo List
           </Link>
+          <Link
+            style={{ margin: "10px", width: "250px" }}
+            className="btn-primary"
+            to="/flipCoinV2"
+          >
+            FlipCoin V2
+          </Link>
         </div>
       </Banner>
     </SimpleHero>

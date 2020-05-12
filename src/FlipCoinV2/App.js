@@ -1,7 +1,7 @@
 import React from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
-import CoinContainer from './CoinContainer';
+import FlipCoinV2 from './FlipCoinV2';
 
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <div>
             <SimpleHero>
                 <Banner>
-                    <CoinContainer />
+                    <FlipCoinV2/>
                 </Banner>    
             </SimpleHero>            
         </div>
