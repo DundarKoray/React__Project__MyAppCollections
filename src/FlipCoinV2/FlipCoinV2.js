@@ -68,7 +68,7 @@ class FlipCoinV2 extends Component {
                 <div className="imagewrapper">
                     
                     
-                  <img className="image2" src={headsPic} />
+                  <img alt="" className="image2" src={headsPic} />
                 </div>
               </div>
 
