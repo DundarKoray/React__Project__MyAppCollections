@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { v4 as uuidv4 } from "uuid"
+import styles from './style.module.css';
 
 
 class Form extends Component {
@@ -28,7 +29,7 @@ class Form extends Component {
   render() {
     return (
       <form>
-        <div style={{display: "flex", flexDirection: "column", alignItems:"center", justifyContent:"center"}}>
+        <div className={styles.formWrapper}>
           
 
           <label>Height</label>

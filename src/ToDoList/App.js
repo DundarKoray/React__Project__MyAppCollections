@@ -2,9 +2,8 @@ import React from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
 import ToDoList from './ToDoList';
-import { Link } from 'react-router-dom';
 
-const ToDoListContainer = () => {
+const App = () => {
     return (
         <SimpleHero >
             <Banner>
@@ -14,4 +13,4 @@ const ToDoListContainer = () => {
     );
 };
 
-export default ToDoListContainer;
+export default App;

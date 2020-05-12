@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import BoxGenerator from "./BoxGenerator";
 import Form from "./Form";
-import { FaArrowLeft} from 'react-icons/fa'
-import { Link } from 'react-router-dom';
+import styles from './style.module.css'
+import InnerNavBar from "../InnerNavBar/InnerNavBar";
 
 
 class BoxGeneratorList extends Component {
@@ -40,9 +40,9 @@ class BoxGeneratorList extends Component {
       );
     });
     return (
-      <div>
+      <div className={styles.wrap}>
         
-        <Link to="/" style={{marginBottom: "3rem"}}className="btn-white"><FaArrowLeft /> Back</Link>
+        <InnerNavBar text="back" link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/BoxGenerator"/>
         <h1>Color Box Generator</h1>
         <p>Insert values to create boxes</p>
         <Form createBox={this.create}/>

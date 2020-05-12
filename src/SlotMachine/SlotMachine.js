@@ -1,6 +1,8 @@
 import React from "react";
-import ButtonReturn from "../ButtonReturn/ButtonReturn";
+import ButtonReturn from "../Buttons/ButtonReturn/ButtonReturn";
 import "./slotMachine.css";
+import InnerNavBar from "../InnerNavBar/InnerNavBar";
+
 class SlotMachine extends React.Component {
   constructor(props) {
     super(props);
@@ -64,7 +66,7 @@ class SlotMachine extends React.Component {
 
     return (
       <div className="Machine">
-         <ButtonReturn text="Back"/>
+         <InnerNavBar text="back" link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/SlotMachine" />
         <h1>Slot Machine</h1>
         <p>Do you feel lucky today? Give it a try!</p>
         
@@ -79,9 +81,6 @@ class SlotMachine extends React.Component {
         <p className="result">        
         {this.state.message === "You Win!" ? <span className="winner">{this.state.message}</span> :  <span className="loser">{this.state.message}</span> }
         </p>
-        
-        <hr style={{marginTop: '15rem', marginBottom: '1rem'}}/>
-        <p><a target="_blank" rel="noopener noreferrer" className="btn-white" href="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/SlotMachine">See the source code</a></p>
       </div>
     );
   }

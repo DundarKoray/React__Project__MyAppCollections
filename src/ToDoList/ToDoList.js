@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ToDo from './ToDo';
-import { FaArrowLeft} from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import InnerNavBar from "../InnerNavBar/InnerNavBar";
+import styles from './style.module.css'
 
 class ToDoList extends Component {
   constructor(props) {
@@ -15,12 +15,11 @@ class ToDoList extends Component {
           return <ToDo task={item.task} />
       })
     return (
-      <div>
-          <Link to="/" style={{marginBottom: "3rem"}}className="btn-white"><FaArrowLeft /> Back</Link>
+      <div className={styles.wrap}>
+          <InnerNavBar text="back" link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/ToDoList"/>
         <h1>Todo List!</h1>
         <ul>
-          <li>Todo 1</li>
-          <li>Todo 2</li>
+          {todos}
         </ul>
       </div>
     );

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-
 import Box from "./Box";
 import "./BoxContainer.css";
+import ButtonReturn from "../Buttons/ButtonReturn/ButtonReturn";
+import InnerNavBar from "../InnerNavBar/InnerNavBar";
 
-import ButtonReturn from "../ButtonReturn/ButtonReturn";
 class BoxContainer extends Component {
   static defaultProps = {
     numBoxes: 9,
@@ -27,7 +27,7 @@ class BoxContainer extends Component {
     ));
     return (
       <div>
-        <ButtonReturn text="Back" />
+        <InnerNavBar text="back" link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/ColorBoxes"/>
         <h2>Color Boxes</h2>
         <p>Click one of the boxes to change color</p>
         <div className="BoxContainer">{boxes}</div>

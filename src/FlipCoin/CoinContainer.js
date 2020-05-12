@@ -3,7 +3,8 @@ import Coin from "./Coin";
 import { choice } from "./helpers";
 import headsPic from "./heads.png";
 import tailsPic from "./tails.png";
-import ButtonReturn from "../ButtonReturn/ButtonReturn";
+import InnerNavBar from "../InnerNavBar/InnerNavBar";
+
 class CoinContainer extends Component {
   static defaultProps = {
     coins: [
@@ -42,8 +43,8 @@ class CoinContainer extends Component {
   render() {
     return (
       <div>
-          {console.log(this.state.currCoin)}
-          <ButtonReturn text="Back"/>
+          <InnerNavBar text="back" link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/FlipCoin"/>
+          
         <h2>Let's Flip A Coin!</h2>
         <p>
           Out of {this.state.nFlips} flips, there have been {this.state.nHeads}{" "}
@@ -60,8 +61,7 @@ class CoinContainer extends Component {
           Flip Me!
         </button>
         <br></br>
-        <hr style={{marginTop: '15rem', marginBottom: '1rem'}}/>
-        <p><a target="_blank" rel="noopener noreferrer" className="btn-white" href="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/FlipCoin">See the source code</a></p>
+        
       </div>
     );
   }

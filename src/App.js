@@ -3,7 +3,7 @@ import Layout from "./Layout";
 import Home from "./Home/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FlipCoin from './FlipCoin/App';
-import HangMan from './HangMan/Hangman';
+import HangMan from './HangMan/App';
 import ColorBoxes from './ColorBoxes/App';
 import BoxGenerator from './BoxGenerator/App'
 import SlotMachine from './SlotMachine/App'

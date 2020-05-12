@@ -1,7 +1,8 @@
 import React from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
-import SlotMachine from './SlotMachine';
+import Hangman from './Hangman';
+
 
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
         <div>
             <SimpleHero>
                 <Banner>
-                    <SlotMachine/>
+                    <Hangman/>
                 </Banner>    
             </SimpleHero>            
         </div>

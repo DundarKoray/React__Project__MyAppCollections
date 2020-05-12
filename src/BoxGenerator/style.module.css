@@ -1,0 +1,15 @@
+.wrap{
+    margin: 0 auto;
+    max-width: 1170px;    
+}
+
+.formWrapper {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    width: 25% ;
+}
