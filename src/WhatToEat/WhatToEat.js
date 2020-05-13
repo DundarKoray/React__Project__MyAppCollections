@@ -57,9 +57,10 @@ class WhatToEat extends Component {
         <div>
           <h2>What To Eat ?</h2>
           <p>
-            You are hungry and don't know what to eat/prepare? Well, this app
-            will help you to decide what to cook.
+            You are hungry and don't know what to eat/prepare? 
           </p>
+          <p>Well, this app
+            will help you to decide what to cook.</p>
           <div style={{  display: "flex", flexWrap:'wrap', justifyContent: "center" }}>
             <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={this.letsEatLunch}>
               lunch
