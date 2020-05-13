@@ -104,6 +104,24 @@ const LUNCH = [
 ];
 
 
+const DESSERT = [
+    {
+      name: "Creme Caramel",
+      link: "https://www.finecooking.com/recipe/basic-creme-caramel",
+      ingredients: ["eggs", "heavy cream", "vanilla extract", "sugar", "milk"],
+      image:
+        "https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18195816/051095070-01-creme-caramel-thumb16x9.jpg",
+    },
+    {
+      name: "Banana Bread",
+      link: "https://bakingamoment.com/perfect-banana-bread-recipe/",
+      ingredients: ["banana", "yogurt", "egg", "butter", "vanilla extract", "sugar"],
+      image:
+        "https://bakingamoment.com/wp-content/uploads/2018/09/IMG_9680-best-banana-bread-recipe-square.jpg",
+    },
+  ];
+
+
 
 function randomMainFood() {
   return MAIN_FOODS[Math.floor(Math.random() * MAIN_FOODS.length)];
@@ -113,4 +131,8 @@ function randomLunch() {
   return LUNCH[Math.floor(Math.random() * LUNCH.length)];
 }
 
-export { randomMainFood, randomLunch}
+function randomDessert() {
+  return DESSERT[Math.floor(Math.random() * DESSERT.length)];
+}
+
+export { randomMainFood, randomLunch, randomDessert}

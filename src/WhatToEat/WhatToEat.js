@@ -1,4 +1,4 @@
-import { randomMainFood, randomLunch } from "./FoodList";
+import { randomMainFood, randomLunch, randomDessert } from "./FoodList";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import React, { Component } from "react";
 import styles from "./style.module.css";
@@ -19,7 +19,7 @@ class WhatToEat extends Component {
 
   letsEatLunch() {
     const lunch = randomLunch();
-    console.log(lunch);
+    // console.log(lunch);
     this.setState({
       name: lunch.name,
       ingredients: lunch.ingredients.join(", "),
@@ -30,12 +30,23 @@ class WhatToEat extends Component {
 
   letsEatDinner() {
     const dinner = randomMainFood();
-    console.log(dinner);
+    // console.log(dinner);
     this.setState({
       name: dinner.name,
       ingredients: dinner.ingredients.join(", "),
       link: dinner.link,
       image: dinner.image,
+    });
+  }
+
+  letsEatDessert() {
+    const dessert = randomDessert();
+    // console.log(dessert);
+    this.setState({
+      name: dessert.name,
+      ingredients: dessert.ingredients.join(", "),
+      link: dessert.link,
+      image: dessert.image,
     });
   }
 
@@ -53,7 +64,7 @@ class WhatToEat extends Component {
             <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={this.letsEatLunch}>
               lunch
             </button>
-            <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={this.letsEatDinner}>
+            <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={()=> this.letsEatDessert()}>
               dessert
             </button>
             <button className="btn-primary" style={{padding: '0.4rem .8rem'}} onClick={this.letsEatDinner}>
