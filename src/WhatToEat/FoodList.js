@@ -23,7 +23,7 @@ const MAIN_FOODS = [
   {
     name: "Moose Meatballs",
     link: "https://anna.fi/reseptit/hirvipullat-jaloviinakermakastikkeessa",
-    ingredients: ["Moose minced meat", "carrot", "cellery", "patato"],
+    ingredients: ["moose minced meat", "carrot", "cellery", "patato"],
     image:
       "https://anna.fi/wp-content/uploads/s/f/ruokaohje/975153-hirvenlihapyorykat-1024x743.jpg",
   },
@@ -86,6 +86,20 @@ const LUNCH = [
     ingredients: ["pasta", "cucember", "tomato", "red kidney bean", "dill"],
     image:
       "https://www.inspiredtaste.net/wp-content/uploads/2018/12/Easy-Pasta-Salad-Recipe-2-1200.jpg",
+  },
+  {
+    name: "Salmon Soup",
+    link: "https://www.valio.fi/reseptit/lohikeitto/",
+    ingredients: ["salmon", "patato", "bay leaft", "kerma", "dill"],
+    image:
+      "https://cdn.valio.fi/mediafiles/5daeba02-4374-403d-ad71-294c72bfa5ff/1440x1080-recipe-hero",
+  },
+  {
+    name: "Chickpea Chicken Soup",
+    link: "https://www.eatwell101.com/chickpea-chicken-soup-recipe",
+    ingredients: ["chickpea", "chicken", "carrot", "tomato paste", "parsley"],
+    image:
+      "https://www.eatwell101.com/wp-content/uploads/2015/11/Chickpea-chicken-soup-recipe2.jpg",
   },
 ];
 

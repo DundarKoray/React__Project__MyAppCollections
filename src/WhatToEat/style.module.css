@@ -1,0 +1,13 @@
+.wrapper {
+    /* margin: 0 auto; */
+    max-width: 1170px;
+   
+}
+
+.cardWrapper {
+    
+    display: flex;
+    justify-content: center;
+}
+
+

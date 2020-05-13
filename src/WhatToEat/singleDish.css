@@ -1,0 +1,53 @@
+.price-information {
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    /* margin is 5% because it is half of the remaining width above.*/
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    color: black;
+}
+
+.plan-box div {
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;  /*this border gave very nice dividing effect.*/
+    
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
