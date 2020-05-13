@@ -5,6 +5,6 @@ export default [
   },
   {
     path: "/about",
-    text: "about",
+    text: "about Me",
   },
 ]

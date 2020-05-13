@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './footer.module.css'
 // import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
-// import { Link } from 'gatsby'
+import { Link } from 'react-router-dom'
 // import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
                 })}
             </div>
             <div className={styles.copyright}>
-                copyright &copy; Koray Dündar {new Date().getFullYear()} all rights reserved.
+                copyright &copy; <Link style={{textDecoration:'underline',outline:'none', background:'transparent', color:'#d4a53f'}} to={"./about"}>Koray Dündar</Link> {new Date().getFullYear()} all rights reserved.
             </div>
         </footer>
     );
