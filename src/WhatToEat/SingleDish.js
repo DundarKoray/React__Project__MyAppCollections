@@ -19,7 +19,7 @@ const SingleDish = (props) => {
         <p className="plan-price-meal">{ingredients}</p>
       </div>
       <div>
-        <a href={link} target="_blank" rel="noopener noreferrer" style={{padding: '0.4rem .8rem'}} className="btn-primary">How to Cook</a>
+        <a href={link} target="_blank" rel="noopener noreferrer" style={{padding: '0.4rem .8rem'}} className="howToCookButton">How to Cook</a>
       </div>
     </div>
   );

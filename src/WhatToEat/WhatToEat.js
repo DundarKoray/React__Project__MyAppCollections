@@ -8,10 +8,10 @@ class WhatToEat extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      ingredients: "",
-      link: "",
-      image: "",
+      name: "Adana Kebap",
+      ingredients: ["ground lamb, ", "red bell pepper, ", "onion"],
+      link: "http://www.kebabhouseselcuk.com/adana-kebab-recipe.html",
+      image: "https://i.pinimg.com/originals/f5/87/a8/f587a8486a11272b8d9854d7830e95bf.jpg",
     };
     this.letsEatLunch = this.letsEatLunch.bind(this);
     this.letsEatDinner = this.letsEatDinner.bind(this);
@@ -50,50 +50,59 @@ class WhatToEat extends Component {
     });
   }
 
+  
   render() {
     return (
       <div className={styles.wrapper}>
         <InnerNavBar text="back" />
         <div>
           <h2>What To Eat ?</h2>
-          <p>
-            You are hungry and don't know what to eat/prepare? 
-          </p>
-          <p>Well, this app
-            will help you to decide what to cook.</p>
-          <div style={{  display: "flex", flexWrap:'wrap', justifyContent: "center" }}>
-            <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={this.letsEatLunch}>
-              lunch
-            </button>
-            <button className="btn-primary" style={{marginRight:'10px', padding: '0.4rem .8rem'}} onClick={this.letsEatDinner}>
-              dinner
-            </button>
-            <button style={{padding: '0.4rem .8rem'}} className="btn-primary" onClick={()=> this.letsEatDessert()}>
-              dessert
-            </button>
-          </div>
+          <p>This app helps you to decide what to cook.</p>
           <br />
-          <br />
-          {/* <p>{this.state.name}</p>
-          <div style={{ overflow: "hidden" }}>
-            {this.state.image ? (
-              <img style={{ width: "280px" }} src={this.state.image} />
+          <div className={styles.cardWrapper}>
+            {this.state.name ? (
+              <SingleDish
+                link={this.state.link}
+                image={this.state.image}
+                title={this.state.name}
+                ingredients={this.state.ingredients}
+              />
             ) : null}
           </div>
           <br />
-          <p>{this.state.ingredients}</p>
-          {this.state.link ? (
-            <button className="btn-primary" href={this.state.link}>
-              How to Cook
+          {/* <p>Keep pressing button till you find the right dish for you.</p> */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            <button
+              style={{ marginRight: "10px", padding: "0.4rem .8rem" }}
+              className="btn-primary"
+              onClick={this.letsEatLunch}
+            >
+              lunch
             </button>
-          ) : null} */}
-          <div className={styles.cardWrapper}>
-
-        {this.state.name ? <SingleDish link={this.state.link} image={this.state.image} title={this.state.name} ingredients={this.state.ingredients} /> : null }
+            <button
+              className="btn-primary"
+              style={{ marginRight: "10px", padding: "0.4rem .8rem" }}
+              onClick={this.letsEatDinner}
+            >
+              dinner
+            </button>
+            <button
+              style={{ padding: "0.4rem .8rem" }}
+              className="btn-primary"
+              onClick={() => this.letsEatDessert()}
+            >
+              dessert
+            </button>
           </div>
+          
+          <br/>
         </div>
-
-        
       </div>
     );
   }

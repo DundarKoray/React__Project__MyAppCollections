@@ -1,54 +1,64 @@
+import zucchiniChicken from "./images/zuccini-chicken.jpeg";
+import makaroniLaatikko from "./images/makaroniLaatikko.jpg";
+import adanaKebap from "./images/adana.jpg";
+import guinnesBeefStew from "./images/guinnesBeefStew.jpg";
+import mooseMeatBalls from "./images/mooseMeatBalls.jpg";
+import salmonOvenVeggies from "./images/salmonOvenVeggies.jpg";
+import lasagne from './images/lasagne.jpg';
+import chickenKebap from './images/chickenKebap.jpg';
+
 const MAIN_FOODS = [
   {
     name: "Zucchini Chicken Spaghetti",
     link: "https://www.youtube.com/watch?v=mILFcumUbuk&feature=emb_title",
     ingredients: ["zucchini", "chicken", "spaghetti"],
-    image:
-      "https://www.eatwell101.com/wp-content/uploads/2018/03/zucchini-and-chicken-recipe.jpg",
+    image: zucchiniChicken,
   },
   {
     name: "Makaroni Laatikko",
     link: "https://www.k-ruoka.fi/reseptit/liha-makaronilaatikko",
     ingredients: ["makaroni", "minced meat"],
-    image:
-      "https://www.myllynparas.fi/sites/default/files/thumbnails/image/1377846177_siken_liha_makaronilaatikko_1.jpg",
+    image: makaroniLaatikko,
+  },
+  {
+    name: "Adana Kebap",
+    ingredients: ["ground lamb, ", "red bell pepper, ", "onion"],
+    link: "http://www.kebabhouseselcuk.com/adana-kebab-recipe.html",
+    image: adanaKebap,
   },
   {
     name: "Guinness Beef Stew",
     link: "https://www.recipetineats.com/irish-beef-and-guinness-stew/",
     ingredients: ["cube meat", "carrot", "cellery", "patato", "guinnes beer"],
-    image:
-      "https://www.recipetineats.com/wp-content/uploads/2020/03/Irish-Beef-Guinness-Stew_6-SQ.jpg",
+    image: guinnesBeefStew,
   },
   {
     name: "Moose Meatballs",
     link: "https://anna.fi/reseptit/hirvipullat-jaloviinakermakastikkeessa",
     ingredients: ["moose minced meat", "carrot", "cellery", "patato"],
-    image:
-      "https://anna.fi/wp-content/uploads/s/f/ruokaohje/975153-hirvenlihapyorykat-1024x743.jpg",
+    image: mooseMeatBalls,
   },
   {
     name: "Salmon and Oven Vegies",
-    link: "https://www.onceuponachef.com/recipes/restaurant-style-pan-seared-salmon.html",
+    link:
+      "https://www.onceuponachef.com/recipes/restaurant-style-pan-seared-salmon.html",
     ingredients: ["salmon", "sweet patato", "beetroot", "patato"],
-    image:
-      "https://www.onceuponachef.com/images/2018/02/pan-seared-salmon--1200x988.jpg",
+    image: salmonOvenVeggies,
   },
   {
     name: "Lasagne",
     link: "https://www.k-ruoka.fi/reseptit/lasagne",
     ingredients: ["minced meat", "carrot", "cheese"],
     image:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-lasagna-bolognese-horizontal-1543346979.png",
+      lasagne,
   },
   {
-    name: "Turkish Chicken Kebap and Bulgur",
+    name: "Turkish Chicken Kebap",
     link: "https://www.thespruceeats.com/basic-turkish-chicken-kebab-3274263",
     ingredients: ["chicken", "tomato paste", "bulgur"],
     image:
-      "https://www.thespruceeats.com/thmb/3aS-MqMydQjW1n7RBGWNVYQagIo=/4494x3000/filters:fill(auto,1)/basic-turkish-chicken-kebab-3274263_19-5b4ce87746e0fb00370a5025.jpg",
+      chickenKebap,
   },
-  
 ];
 
 const LUNCH = [
@@ -63,15 +73,13 @@ const LUNCH = [
     name: "Sausage Soup",
     link: "https://www.k-ruoka.fi/reseptit/nakkikeitto",
     ingredients: ["nakki", "patato", "carrot"],
-    image:
-      "https://snellman.fi/app/uploads/sites/2/nakkikeitto-3.jpg",
+    image: "https://snellman.fi/app/uploads/sites/2/nakkikeitto-3.jpg",
   },
   {
     name: "Meatball Soup",
     link: "https://www.youtube.com/watch?v=EWz5Kp9TAI4",
     ingredients: ["minced meat", "carrot", "patato"],
-    image:
-      "https://d2lswn7b0fl4u2.cloudfront.net/photos/sulu-kofte.jpg",
+    image: "https://d2lswn7b0fl4u2.cloudfront.net/photos/sulu-kofte.jpg",
   },
   {
     name: "Minced Meat Soup",
@@ -103,25 +111,29 @@ const LUNCH = [
   },
 ];
 
-
 const DESSERT = [
-    {
-      name: "Creme Caramel",
-      link: "https://www.finecooking.com/recipe/basic-creme-caramel",
-      ingredients: ["eggs", "heavy cream", "vanilla extract", "sugar", "milk"],
-      image:
-        "https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18195816/051095070-01-creme-caramel-thumb16x9.jpg",
-    },
-    {
-      name: "Banana Bread",
-      link: "https://bakingamoment.com/perfect-banana-bread-recipe/",
-      ingredients: ["banana", "yogurt", "egg", "butter", "vanilla extract", "sugar"],
-      image:
-        "https://bakingamoment.com/wp-content/uploads/2018/09/IMG_9680-best-banana-bread-recipe-square.jpg",
-    },
-  ];
-
-
+  {
+    name: "Creme Caramel",
+    link: "https://www.finecooking.com/recipe/basic-creme-caramel",
+    ingredients: ["eggs", "heavy cream", "vanilla extract", "sugar", "milk"],
+    image:
+      "https://img.taste.com.au/ayj6-EQq/taste/2016/11/creme-caramel-74779-1.jpeg",
+  },
+  {
+    name: "Banana Bread",
+    link: "https://bakingamoment.com/perfect-banana-bread-recipe/",
+    ingredients: [
+      "banana",
+      "yogurt",
+      "egg",
+      "butter",
+      "vanilla extract",
+      "sugar",
+    ],
+    image:
+      "https://bakingamoment.com/wp-content/uploads/2018/09/IMG_9680-best-banana-bread-recipe-square.jpg",
+  },
+];
 
 function randomMainFood() {
   return MAIN_FOODS[Math.floor(Math.random() * MAIN_FOODS.length)];
@@ -135,4 +147,4 @@ function randomDessert() {
   return DESSERT[Math.floor(Math.random() * DESSERT.length)];
 }
 
-export { randomMainFood, randomLunch, randomDessert}
+export { randomMainFood, randomLunch, randomDessert };

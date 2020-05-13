@@ -1,3 +1,17 @@
+:root {
+    --primaryColor: #d4a53f;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBlack: #222;
+    --mainGrey: #f5f5f5;
+    --darkGrey: #afafaf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 4px;
+    --lightShadow: 2px 5px 20px 0px #efefef;
+    --darkShadow: 8px 20px 12px 0px #efefef;
+    
+  }
+
 .price-information {
     background-color: #f4f4f4;
 }
@@ -51,3 +65,25 @@
     text-align: center;
     border: 0;
 }
+
+.howToCookButton {
+    padding: 0.5rem 1rem;
+    font-size: .8rem;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    outline: none;
+    border: 1px solid var(--primaryColor);
+
+    display: inline-block;
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+  
+  .howToCookButton:hover {
+    background: var(--primaryColor);
+    color:  var(--mainWhite);
+  }
+  
+  
+  
