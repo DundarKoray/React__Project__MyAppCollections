@@ -11,7 +11,7 @@ const SingleDish = (props) => {
 
           </div>
         <div style={{height:'200px', overflow:'hidden'}}>
-        <img style={{width: '100%'}} src={image}/>
+        <img alt="dishes" style={{width: '100%'}} src={image}/>
 
         </div>
       </div>
@@ -19,7 +19,7 @@ const SingleDish = (props) => {
         <p className="plan-price-meal">{ingredients}</p>
       </div>
       <div>
-        <button href={link} className="btn-primary">How to Cook</button>
+        <a href={link} target="_blank" rel="noopener noreferrer" style={{padding: '0.4rem .8rem'}} className="btn-primary">How to Cook</a>
       </div>
     </div>
   );
