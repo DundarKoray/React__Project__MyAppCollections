@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import Home from "./Home/Home";
+import About from "./About/About";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FlipCoin from './FlipCoin/App';
 import HangMan from './HangMan/App';
@@ -18,6 +19,7 @@ const App = () => {
 
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
         <Route  path="/flipCoin" component={FlipCoin} exact />
         <Route  path="/hangMan" component={HangMan} exact />
         <Route  path="/colorBoxes" component={ColorBoxes} exact />
