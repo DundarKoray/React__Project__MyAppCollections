@@ -65,11 +65,11 @@ class WhatToEat extends Component {
             <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={this.letsEatLunch}>
               lunch
             </button>
-            <button style={{marginRight:'10px', padding: '0.4rem .8rem'}} className="btn-primary" onClick={()=> this.letsEatDessert()}>
-              dessert
-            </button>
-            <button className="btn-primary" style={{padding: '0.4rem .8rem'}} onClick={this.letsEatDinner}>
+            <button className="btn-primary" style={{marginRight:'10px', padding: '0.4rem .8rem'}} onClick={this.letsEatDinner}>
               dinner
+            </button>
+            <button style={{padding: '0.4rem .8rem'}} className="btn-primary" onClick={()=> this.letsEatDessert()}>
+              dessert
             </button>
           </div>
           <br />
