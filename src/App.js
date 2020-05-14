@@ -11,6 +11,7 @@ import SlotMachine from './SlotMachine/App'
 import ToDoList from './ToDoList/App'
 import FlipCoinV2 from './FlipCoinV2/App'
 import WhatToEat from "./WhatToEat/App";
+import WhatToEatV2 from "./WhatToEat/App";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route  path="/toDoList" component={ToDoList} exact />
         <Route  path="/flipCoinV2" component={FlipCoinV2} exact />
         <Route  path="/whatToEat" component={WhatToEat} exact />
+        {/* <Route  path="/whatToEatV2" component={WhatToEatV2} exact /> */}
       </Switch>
     </Layout>
     </BrowserRouter>
