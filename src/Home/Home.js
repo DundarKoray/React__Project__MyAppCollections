@@ -68,6 +68,13 @@ const Home = () => {
           >
             What to Eat
           </Link>
+          <Link
+            style={{ margin: "10px", width: "250px" }}
+            className="btn-primary"
+            to="/whatToEatV2"
+          >
+            What to Eat V2
+          </Link>
         </div>
       </Banner>
     </SimpleHero>

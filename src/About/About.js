@@ -1,7 +1,7 @@
 import React from "react";
 import SimpleHero from "../SimpleHero/SimpleHero";
-import Banner from "../Banner/Banner";
-import InnerNavBar from "../InnerNavBar/InnerNavBar";
+// import Banner from "../Banner/Banner";
+// import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import Koray from "./Koray.jpeg";
 import "./style.css";
 
@@ -50,7 +50,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <img className="about_me_image" src={Koray} />
+            <img alt="koray dundar" className="about_me_image" src={Koray} />
             {/* <Img
             className="about_me_image"
             fluid={image}
