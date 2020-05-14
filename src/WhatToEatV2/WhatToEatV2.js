@@ -1,4 +1,4 @@
-import { randomMainFood, randomLunch, randomDessert, mixMainFoods, dinnerData, lunchData, dessertData } from "./FoodList";
+import { dinnerData, lunchData, dessertData } from "./FoodList";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import React, { Component } from "react";
 import Slider from "react-slick";
@@ -6,9 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./style.module.css";
 import SingleDish from "./SingleDish";
-import zucchiniChicken from "./images/zuccini-chicken.jpeg";
-import makaroniLaatikko from "./images/makaroniLaatikko.jpg";
-import adanaKebap from "./images/adana.jpg";
+
 
 class WhatToEatV2 extends Component {
   constructor(props) {
@@ -17,8 +15,9 @@ class WhatToEatV2 extends Component {
       status: '',
       data: ""
     };
- 
   }
+
+  
 
  
   dinner(){
@@ -47,7 +46,55 @@ class WhatToEatV2 extends Component {
   
 
   render() {
-    
+    var settings = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            autoplay: true,
+          },
+        },
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: false,
+            dots: false,
+            autoplay: false,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+      ],
+    }
   
     return (
       <div className={styles.wrapper}>
@@ -89,9 +136,9 @@ class WhatToEatV2 extends Component {
           </div>
           
            <br/>
-          <div style={{margin:'auto',width:'350px'}}>
+          <div className={styles.foodCard}>
             {this.state.data ? 
-            <Slider >
+            <Slider {...settings} >
               {
                 this.state.data.map((item, key) => {
                   return (

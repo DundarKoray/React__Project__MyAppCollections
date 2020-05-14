@@ -1,3 +1,7 @@
+// lunch
+
+
+// dinner
 import zucchiniChicken from "./images/zuccini-chicken.jpeg";
 import makaroniLaatikko from "./images/makaroniLaatikko.jpg";
 import adanaKebap from "./images/adana.jpg";
@@ -6,6 +10,9 @@ import mooseMeatBalls from "./images/mooseMeatBalls.jpg";
 import salmonOvenVeggies from "./images/salmonOvenVeggies.jpg";
 import lasagne from './images/lasagne.jpg';
 import chickenKebap from './images/chickenKebap.jpg';
+
+// dessert
+import mansikkaRahka from './images/mansikkaRahka.jpg';
 
 const MAIN_FOODS = [
   {
@@ -132,6 +139,19 @@ const DESSERT = [
     ],
     image:
       "https://bakingamoment.com/wp-content/uploads/2018/09/IMG_9680-best-banana-bread-recipe-square.jpg",
+  },
+  {
+    name: "Strawberry Yogurt",
+    link: "https://www.kotikokki.net/reseptit/nayta/1212/Makoisa%20mansikkarahka/",
+    ingredients: [
+      "strawberry",
+      "yogurt",
+      "sugar",
+      "vanilla sugar",
+      "heavy cream"
+    ],
+    image:
+      mansikkaRahka,
   },
 ];
 
