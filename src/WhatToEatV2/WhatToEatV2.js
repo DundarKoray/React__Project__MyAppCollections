@@ -49,9 +49,9 @@ class WhatToEatV2 extends Component {
     var settings = {
       dots: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 4000,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 3,
       slidesToScroll: 1,
       swipeToSlide: true,
@@ -60,21 +60,13 @@ class WhatToEatV2 extends Component {
           breakpoint: 1200,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
             arrows: true,
-            autoplay: true,
           },
         },
         {
           breakpoint: 1023,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: false,
-            dots: false,
-            autoplay: false,
+            
           },
         },
         {
@@ -82,7 +74,7 @@ class WhatToEatV2 extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
           },
         },
         {
@@ -90,7 +82,8 @@ class WhatToEatV2 extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
+            autoplayspeed: 4000,
           },
         },
       ],
@@ -142,7 +135,7 @@ class WhatToEatV2 extends Component {
               {
                 this.state.data.map((item, key) => {
                   return (
-                    <div style={{}} key={key}>
+                    <div key={key}>
                   <SingleDish
                   link={item.link}
                   image={item.image}

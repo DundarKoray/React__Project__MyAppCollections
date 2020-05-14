@@ -13,6 +13,7 @@ import chickenKebap from './images/chickenKebap.jpg';
 
 // dessert
 import mansikkaRahka from './images/mansikkaRahka.jpg';
+import blueberryPie from './images/mustikkapiirakka.jpg';
 
 const MAIN_FOODS = [
   {
@@ -152,6 +153,19 @@ const DESSERT = [
     ],
     image:
       mansikkaRahka,
+  },
+  {
+    name: "Blueberry Pie",
+    link: "https://www.myllynparas.fi/reseptit/kermaviilitaytteinen-mustikkapiirakka",
+    ingredients: [
+      "blueberry",
+      "egg",
+      "sugar",
+      "vanilla sugar",
+      "heavy cream"
+    ],
+    image:
+     blueberryPie,
   },
 ];
 

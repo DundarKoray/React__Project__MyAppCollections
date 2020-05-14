@@ -6,7 +6,7 @@ const SingleDish = (props) => {
   return (
     <div className="plan-box">
       <div>
-          <div style={{height:'50px'}}>
+          <div style={{display:'flex', justifyContent:'center',alignItems:'center',height:'60px'}}>
         <p>{title}</p>
 
           </div>
@@ -18,9 +18,9 @@ const SingleDish = (props) => {
       <div style={{height:'70px'}}>
         <p className="plan-price-meal">{ingredients}</p>
       </div>
-      <div>
-        <a href={link} target="_blank" rel="noopener noreferrer" style={{padding: '0.4rem .8rem'}} className="howToCookButton">How to Cook</a>
-      </div>
+      
+        <a href={link} target="_blank" rel="noopener noreferrer" style={{margin:'1rem',padding: '0.4rem .8rem'}} className="howToCookButton">How to Cook</a>
+      
     </div>
   );
 };

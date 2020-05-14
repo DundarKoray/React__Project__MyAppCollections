@@ -22,9 +22,11 @@
     border-radius: 5px;
     width: 300px;
     /* margin is 5% because it is half of the remaining width above.*/
+    
     -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
     color: black;
+    
 }
 
 .plan-box div {
@@ -87,4 +89,6 @@
   }
   
   
-  
+  @media only screen and (max-width: 1023px) {
+    
+}

@@ -32,7 +32,27 @@
 
 
   .foodCard {
-    max-width: '900px';
+    width: 90%;
+    margin: auto;
   }
 
-  
+  @media only screen and (max-width: 1023px) {
+    .foodCard {
+      width: 84%;
+      margin: auto;
+    }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .foodCard {
+        width: 55%;
+        margin: auto;
+      }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .foodCard {
+          width: 93%;
+          margin: auto;
+        }
+        }
