@@ -86,6 +86,15 @@ class WhatToEatV2 extends Component {
             autoplayspeed: 4000,
           },
         },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplayspeed: 4000,
+          },
+        },
       ],
     }
   
