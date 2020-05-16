@@ -14,6 +14,8 @@ import chickenKebap from './images/chickenKebap.jpg';
 // dessert
 import mansikkaRahka from './images/mansikkaRahka.jpg';
 import blueberryPie from './images/mustikkapiirakka.jpg';
+import cremeCaramel from './images/cremeCaramel.webp'
+import korvapuusti from './images/cinnamonBun.webp'
 
 const MAIN_FOODS = [
   {
@@ -125,7 +127,7 @@ const DESSERT = [
     link: "https://www.finecooking.com/recipe/basic-creme-caramel",
     ingredients: ["eggs", "heavy cream", "vanilla extract", "sugar", "milk"],
     image:
-      "https://img.taste.com.au/ayj6-EQq/taste/2016/11/creme-caramel-74779-1.jpeg",
+      cremeCaramel,
   },
   {
     name: "Banana Bread",
@@ -167,6 +169,23 @@ const DESSERT = [
     image:
      blueberryPie,
   },
+  {
+    name: "Finnish Cinnamon Bun",
+    link: "https://www.thespruceeats.com/finnish-cinnamon-pastries-korvapuusti-2952710",
+    ingredients: [
+      "milk",
+      "butter",
+      "egg",
+      "flour",
+      "yeast",
+      "sugar",
+      "cardamom",
+      "cinnamon",
+    ],
+    image:
+     korvapuusti,
+  },
+  
 ];
 
 function mixMainFoods() {
