@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <SimpleHero>
       <Banner
-        title="React Excersices"
+        title="React App Collections"
         info="Welcome to my coding playground! Here are few small fun React apps."
       >
         <div className="home-center">
