@@ -53,12 +53,13 @@ class WhatToEatV2 extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       swipeToSlide: true,
       responsive: [
         {
           breakpoint: 1200,
           settings: {
+            slidesToScroll: 1,
             slidesToShow: 1,
             arrows: true,
           },
@@ -66,6 +67,7 @@ class WhatToEatV2 extends Component {
         {
           breakpoint: 1023,
           settings: {
+            slidesToScroll: 1,
             
           },
         },
@@ -74,6 +76,7 @@ class WhatToEatV2 extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            
             arrows: true,
           },
         },
