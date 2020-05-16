@@ -185,4 +185,4 @@ let dinnerData = [...mixMainFoods()]
 let lunchData = [...mixLunch()] 
 let dessertData = [...mixDessert()] 
 
-export { randomMainFood, randomLunch, randomDessert, mixMainFoods, dinnerData, lunchData, dessertData };
+export { mixMainFoods, dinnerData, lunchData, dessertData };
