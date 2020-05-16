@@ -169,18 +169,6 @@ const DESSERT = [
   },
 ];
 
-function randomMainFood() {
-  return MAIN_FOODS[Math.floor(Math.random() * MAIN_FOODS.length)];
-}
-
-function randomLunch() {
-  return LUNCH[Math.floor(Math.random() * LUNCH.length)];
-}
-
-function randomDessert() {
-  return DESSERT[Math.floor(Math.random() * DESSERT.length)];
-}
-
 function mixMainFoods() {
   return MAIN_FOODS.sort(()=> Math.random() - 0.5)
 }
