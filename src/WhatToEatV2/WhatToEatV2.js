@@ -51,7 +51,7 @@ class WhatToEatV2 extends Component {
       autoplay: true,
       autoplaySpeed: 4000,
       infinite: true,
-      speed: 1000,
+      speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
       swipeToSlide: true,
@@ -110,7 +110,7 @@ class WhatToEatV2 extends Component {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              justifyContent: "center",
+              justifyContent: "center"
             }}
           >
             <button

@@ -46,6 +46,7 @@ a {
 
 .btn-white,
 .btn-primary {
+  margin-bottom: .2rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   outline: none;
