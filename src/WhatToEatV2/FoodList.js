@@ -16,6 +16,7 @@ import mansikkaRahka from './images/mansikkaRahka.jpg';
 import blueberryPie from './images/mustikkapiirakka.jpg';
 import cremeCaramel from './images/cremeCaramel.webp'
 import korvapuusti from './images/cinnamonBun.webp'
+import kadinBuduKöfte from './images/kadinBuduKofte.jpg'
 
 const MAIN_FOODS = [
   {
@@ -68,6 +69,13 @@ const MAIN_FOODS = [
     ingredients: ["chicken", "tomato paste", "bulgur"],
     image:
       chickenKebap,
+  },
+  {
+    name: "Lady's Thigh",
+    link: "https://www.youtube.com/watch?v=GTqqvySCuI0",
+    ingredients: ["minced meat", "onion", "rice", "flour", "parsley", "salt", "blackpepper", "egg"],
+    image:
+      kadinBuduKöfte,
   },
 ];
 

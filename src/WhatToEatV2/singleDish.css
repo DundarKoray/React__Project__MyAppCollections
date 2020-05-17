@@ -83,10 +83,7 @@
     cursor: pointer;
 }
   
-  .howToCookButton:hover {
-    background: var(--primaryColor);
-    color:  var(--mainWhite);
-  }
+  
   
   
   @media only screen and (max-width: 320px) {
