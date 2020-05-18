@@ -10,20 +10,27 @@ import mooseMeatBalls from "./images/mooseMeatBalls.jpg";
 import salmonOvenVeggies from "./images/salmonOvenVeggies.jpg";
 import lasagne from './images/lasagne.jpg';
 import chickenKebap from './images/chickenKebap.jpg';
+import kadinBuduKöfte from './images/kadinBuduKofte.jpg'
+import chickenNoodle from './images/chickenNoodle.jpg'
 
 // dessert
 import mansikkaRahka from './images/mansikkaRahka.jpg';
 import blueberryPie from './images/mustikkapiirakka.jpg';
 import cremeCaramel from './images/cremeCaramel.webp'
 import korvapuusti from './images/cinnamonBun.webp'
-import kadinBuduKöfte from './images/kadinBuduKofte.jpg'
 
 const MAIN_FOODS = [
   {
     name: "Zucchini Chicken Spaghetti",
-    link: "https://www.youtube.com/watch?v=mILFcumUbuk&feature=emb_title",
+    link: "https://downshiftology.com/recipes/zucchini-noodles-with-chicken-spinach-parmesan/",
     ingredients: ["zucchini", "chicken", "spaghetti"],
     image: zucchiniChicken,
+  },
+  {
+    name: "Chicken Noodle Wok",
+    link: "https://www.youtube.com/watch?v=RFE7qdhjgXc",
+    ingredients: ["noodle", "chicken", "soy sauce", "brocoli", "carrot", "paprika", "onion", "garlic"],
+    image: chickenNoodle,
   },
   {
     name: "Makaroni Laatikko",

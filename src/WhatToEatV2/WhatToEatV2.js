@@ -48,7 +48,7 @@ class WhatToEatV2 extends Component {
   render() {
     var settings = {
       dots: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       infinite: true,
       speed: 500,
