@@ -111,13 +111,13 @@ class WhatToEatV2 extends Component {
             <button
             active
               style={{ marginRight: "10px", padding: "0.4rem .8rem" }}
-              className={this.state.status === "lunch" ? "btn-primary" : styles.btn}
+              className={this.state.status === "lunch" ? styles.btnPrimary : styles.btn}
               onClick={()=>this.lunch()}
             >
               lunch
             </button>
             <button
-              className={this.state.status === "dinner" ? "btn-primary" : styles.btn}
+              className={this.state.status === "dinner" ? styles.btnPrimary : styles.btn}
               style={{ marginRight: "10px", padding: "0.4rem .8rem" }}
               onClick={()=>this.dinner()}
             >
@@ -125,7 +125,7 @@ class WhatToEatV2 extends Component {
             </button>
             <button
               style={{ padding: "0.4rem .8rem" }}
-              className={this.state.status === "dessert" ? "btn-primary" : styles.btn}
+              className={this.state.status === "dessert" ? styles.btnPrimary : styles.btn}
               onClick={()=>this.dessert()}
             >
               dessert

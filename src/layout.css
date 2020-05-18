@@ -50,7 +50,7 @@ a {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   outline: none;
-  border: 1px solid var(--mainWhite);
+  
   
   display: inline-block;
   transition: var(--mainTransition);
@@ -64,6 +64,7 @@ a {
 
 .btn-white{
   color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
   padding: 0.5rem 1rem;
   font-size: .8rem;
 }

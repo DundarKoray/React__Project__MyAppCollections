@@ -10,6 +10,19 @@
     justify-content: center;
 }
 
+.btnPrimary {
+  margin-bottom: .2rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  outline: none;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
 
 .btn {
   padding: 0.9rem 1.6rem;
@@ -26,10 +39,7 @@
     cursor: pointer;
 }
   
-  .btn:hover {
-    background: var(--primaryColor);
-    color:  var(--mainWhite);
-  }
+  
 
 
   .foodCard {
