@@ -85,7 +85,7 @@ class WhatToEatV2 extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
             autoplayspeed: 4000,
           },
         },
