@@ -2,14 +2,18 @@ import React, { Component } from "react";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import styles from "./style.module.css";
 import NewToDoForm from "./NewToDoForm";
+import { v4 as uuidv4 } from "uuid"
 
 class ToDo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: []
+      todos: [{task: "Eat Well", id: uuidv4()}, {task: "Work Hard", id: uuidv4()}, {task: "Sleep Well", id: uuidv4()}
+    
+    ]
     };
     this.create = this.create.bind(this);
+    this.remove = this.remove.bind(this);
   }
 
   create(newTodo) {
@@ -31,7 +35,7 @@ class ToDo extends Component {
       return (
         <div key={item.id}>
           <button>Edit</button>
-          <button>Remove</button>
+          <button onClick={()=> this.remove(item.id)}>Remove</button>
           <li>{item.task}</li>
         </div>
       );
