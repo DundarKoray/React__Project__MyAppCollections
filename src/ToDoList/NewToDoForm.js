@@ -16,8 +16,8 @@ class NewToDoForm extends Component {
 
     handleChange(e) {
         // console.log(e.target)
-        console.log(e.target.name)
-        console.log(this.state)
+        // console.log(e.target.name)
+        // console.log(this.state)
         
         this.setState({
             [e.target.name]: e.target.value

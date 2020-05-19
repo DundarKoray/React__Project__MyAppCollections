@@ -8,7 +8,7 @@ import HangMan from './HangMan/App';
 import ColorBoxes from './ColorBoxes/App';
 import BoxGenerator from './BoxGenerator/App'
 import SlotMachine from './SlotMachine/App'
-import ToDoList from './ToDoList/App'
+import ToDo from './ToDoList/App'
 import FlipCoinV2 from './FlipCoinV2/App'
 // import WhatToEat from "./WhatToEat/App";
 import WhatToEatV2 from "./WhatToEatV2/App";
@@ -26,7 +26,7 @@ const App = () => {
         <Route  path="/colorBoxes" component={ColorBoxes} exact />
         <Route  path="/boxGenerator" component={BoxGenerator} exact />
         <Route  path="/slotMachine" component={SlotMachine} exact />
-        <Route  path="/toDoList" component={ToDoList} exact />
+        <Route  path="/toDo" component={ToDo} exact />
         <Route  path="/flipCoinV2" component={FlipCoinV2} exact />
         {/* <Route  path="/whatToEat" component={WhatToEat} exact /> */}
         <Route  path="/whatToEatV2" component={WhatToEatV2} exact />
