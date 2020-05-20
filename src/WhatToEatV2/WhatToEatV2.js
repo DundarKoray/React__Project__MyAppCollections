@@ -109,7 +109,7 @@ class WhatToEatV2 extends Component {
             }}
           >
             <button
-            active
+            
               style={{ marginRight: "10px", padding: "0.4rem .8rem" }}
               className={this.state.status === "lunch" ? styles.btnPrimary : styles.btn}
               onClick={()=>this.lunch()}

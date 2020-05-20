@@ -1,56 +1,67 @@
 import React, { Component } from "react";
-import InnerNavBar from "../InnerNavBar/InnerNavBar";
+import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import styles from "./style.module.css";
-import NewToDoForm from "./NewToDoForm";
-import { v4 as uuidv4 } from "uuid"
 
 class ToDo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: [{task: "Eat Well", id: uuidv4()}, {task: "Work Hard", id: uuidv4()}, {task: "Sleep Well", id: uuidv4()}
-    
-    ]
+      isEditing: false,
+      task: this.props.task
     };
-    this.create = this.create.bind(this);
-    this.remove = this.remove.bind(this);
+    this.handleRemove = this.handleRemove.bind(this);
+    this.toggleForm = this.toggleForm.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleUpdate =this.handleUpdate.bind(this);
   }
 
-  create(newTodo) {
+  handleRemove() {
+    this.props.remove(this.props.id);
+  }
+
+  toggleForm() {
     this.setState({
-      todos: [...this.state.todos, newTodo],
+      isEditing: !this.state.isEditing,
     });
   }
 
-  remove(id) {
-    this.setState({
-      // this returns a new array that is not mathcing the id we passed
-      todos: this.state.todos.filter( t => t.id !== id)
-    })
+  handleUpdate(e) {
+    e.preventDefault();
+    // take new task data and pass up to parent
+    this.props.updateTodo(this.props.id, this.state.task)
+    this.setState({ isEditing: false })
+  }
+
+  handleChange(e) {
+      this.setState({
+          [e.target.name] : e.target.value
+      })
   }
 
   render() {
-    const todos = this.state.todos.map(item => {
-      console.log(this.state)
-      return (
-        <div key={item.id}>
-          <button>Edit</button>
-          <button onClick={()=> this.remove(item.id)}>Remove</button>
-          <li>{item.task}</li>
-        </div>
-      );
-    });
-    return (
-      <div className={styles.wrap}>
-        <InnerNavBar
-          text="back"
-          link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/ToDoList"
-        />
-        <h1>Todo List!</h1>
-        <NewToDoForm createTodo={this.create} />
-        <ul>{todos}</ul>
-      </div>
-    );
+    let result;
+    this.state.isEditing
+      ? (result = (
+          <div>
+            <form onSubmit={this.handleUpdate}>
+              <input type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
+              <button onClick={this.handleUpdate}> Save </button>
+            </form>
+          </div>
+        ))
+      : (result = (
+          <div className={styles.editRemove}>
+            <button className={styles.btnEdit} onClick={this.toggleForm}>
+              <FaEdit /> Edit
+            </button>
+            <button className={styles.btnDelete} onClick={this.handleRemove}>
+              <FaTrashAlt /> Delete
+            </button>
+            <li>{this.props.task}</li>
+          </div>
+        ));
+
+    return result;
   }
 }
 

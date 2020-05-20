@@ -50,7 +50,7 @@ const Home = () => {
           <Link
             style={{ margin: "10px", width: "250px" }}
             className="btn-primary"
-            to="/toDo"
+            to="/toDoList"
           >
             ToDo List
           </Link>

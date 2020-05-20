@@ -1,13 +1,13 @@
 import React from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
-import ToDo from './ToDo';
+import ToDoList from './ToDoList';
 
 const App = () => {
     return (
         <SimpleHero >
             <Banner>
-                <ToDo/>
+                <ToDoList />
             </Banner>
         </SimpleHero>
     );

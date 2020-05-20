@@ -2,3 +2,21 @@
     margin: 0 auto;
     max-width: 1170px;    
 }
+
+.editRemove {
+    margin: 2rem;
+}
+
+.todos {
+    list-style: none;
+}
+
+.btnEdit {
+    margin-right: .5rem;
+}
+
+.btnEdit, .btnDelete {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}

@@ -26,7 +26,7 @@ const App = () => {
         <Route  path="/colorBoxes" component={ColorBoxes} exact />
         <Route  path="/boxGenerator" component={BoxGenerator} exact />
         <Route  path="/slotMachine" component={SlotMachine} exact />
-        <Route  path="/toDo" component={ToDo} exact />
+        <Route  path="/toDoList" component={ToDo} exact />
         <Route  path="/flipCoinV2" component={FlipCoinV2} exact />
         {/* <Route  path="/whatToEat" component={WhatToEat} exact /> */}
         <Route  path="/whatToEatV2" component={WhatToEatV2} exact />
