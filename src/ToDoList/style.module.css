@@ -1,27 +1,110 @@
 .wrap{
     margin: 0 auto;
-    max-width: 1170px;    
+    max-width: 800px; 
+    background-color: rgba(0, 0, 0, 0.445);   
+    padding: 1rem 1rem 1rem;
+    box-shadow: 40px 50px 30px 5px rgba(41, 41, 41, 0.192);
 }
 
-.editRemove {
-    margin: 2rem;
+
+
+.editRemove2 {
+    margin: 1rem 0;
+    display: flex;
+    background-color: rgb(0, 0, 0);   
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.editRemove1 {
+    margin: 1rem 0;
+    display: flex;
+    background-color: rgb(0, 0, 0);   
+    justify-content: center;
+    /* align-items: center; */
+    opacity: 0.5;
+    align-items: center;
 }
 
 .todos {
     list-style: none;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0);    */
+    
 }
 
-.btnEdit {
-    margin-right: .5rem;
+
+.buttons {
+   /* flex-shrink: 0; */
+   padding-left: 0.7rem;
+   background-color: rgb(0, 0, 0); 
+}
+.buttonSave {
+    border: none;
+    font-size: 1rem;
+    /* margin: 0.4rem; */
+    background: rgb(0, 0, 0);
+    height: 50px;
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
 }
 
-.btnEdit, .btnDelete {
-    padding: 5px;
-    border-radius: 5px;
-    outline: none;
+.buttonAdd {
+    border: none;
+    font-size: 1rem;
+    /* margin: 0.4rem; */
+    background: #d4a53f;
+    height: 50px;
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.buttons button {
+    border: none;
+    font-size: 1em;
+    margin: 0.4rem;
+    background: none;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    
 }
 
 .completed {
+    /* cursor: pointer; */
     color: lightgrey;
     text-decoration: line-through;
+    background-color: rgb(0, 0, 0); 
+    opacity: 0.6;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+.notCompleted {
+    /* cursor: pointer; */
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.445); 
+    padding: 1rem;
+}
+
+.notCompleted2 {
+    /* cursor: pointer; */
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    color: lightgrey;
+    /* background-color: whitesmoke;  */
+
+    color: black;
+    padding: .1rem;
+    
 }

@@ -75,15 +75,19 @@ class ToDoList extends Component {
       );
     });
     return (
-      <div className={styles.wrap}>
-        <InnerNavBar
+      <div>
+
+      <InnerNavBar
           text="back"
           link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/ToDoList"
-        />
-        <h1>Todo List!</h1>
+          />
+              <div className={styles.wrap}>
+        <h1 style={{marginBottom: '2px'}}>Todo List!</h1>
+        <p style={{marginBottom: '3rem'}} >A Simple React Todo App</p>
         <NewToDoForm createTodo={this.create} />
         <ul className={styles.todos}>{todos}</ul>
       </div>
+          </div>
     );
   }
 }

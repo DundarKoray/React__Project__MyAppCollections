@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaTrashAlt, FaEdit } from "react-icons/fa";
+import { FaTrashAlt, FaEdit, FaSave } from "react-icons/fa";
 import styles from "./style.module.css";
 
 class ToDo extends Component {
@@ -47,22 +47,25 @@ class ToDo extends Component {
     let result;
     this.state.isEditing
       ? (result = (
-          <div>
-            <form onSubmit={this.handleUpdate}>
-              <input type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
-              <button onClick={this.handleUpdate}> Save </button>
+          <div className={styles.editRemove2}>
+            <form style={{display:"flex", width:"60%"}} onSubmit={this.handleUpdate}>
+              <input className={styles.notCompleted2} type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
+              <button className={styles.buttonSave} onClick={this.handleUpdate}> <FaSave /> </button>
             </form>
           </div>
         ))
       : (result = (
-          <div className={styles.editRemove}>
+          <div className={this.props.completed ? styles.editRemove1 : styles.editRemove2}>
+            <li className={this.props.completed ? styles.completed : styles.notCompleted} onClick={this.handleToggle}>{this.props.task}</li>
+            <div className={styles.buttons}>
+
             <button className={styles.btnEdit} onClick={this.toggleForm}>
-              <FaEdit /> Edit
+              <FaEdit /> 
             </button>
             <button className={styles.btnDelete} onClick={this.handleRemove}>
-              <FaTrashAlt /> Delete
+              <FaTrashAlt /> 
             </button>
-            <li className={this.props.completed ? styles.completed : ""} onClick={this.handleToggle}>{this.props.task}</li>
+            </div>
           </div>
         ));
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { v4 as uuidv4 } from "uuid"
+import styles from "./style.module.css";
+
 
 class NewToDoForm extends Component {
     constructor(props){
@@ -28,10 +30,14 @@ class NewToDoForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label htmlFor='task'>New Todo</label>
+                {/* <label htmlFor='task'>New Todo</label> */}
                 {/* name has to match with state, thats why they re both called task */}
-                <input type='text' placeholder='New Todo' name='task' id='task' value={this.state.task} onChange={this.handleChange} />
-                <button>Add Todo</button>
+                <div style={{display:"flex"}}>
+
+                <input style={{flex:"1",fontSize:"1rem",padding:".2rem",marginRight: '.2rem'}}type='text' placeholder='New Todo' name='task' id='task' value={this.state.task} onChange={this.handleChange} />
+                
+                <button className={styles.buttonAdd}>Add</button>
+                </div>
             </form>
         );
     }
