@@ -9,7 +9,8 @@ class ToDoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: [
+      todos:[
+        
         { task: "Eat Well", id: uuidv4() },
         { task: "Work Hard", id: uuidv4() },
         { task: "Sleep Well", id: uuidv4() },
@@ -17,7 +18,8 @@ class ToDoList extends Component {
     };
     this.create = this.create.bind(this);
     this.remove = this.remove.bind(this);
-    this.update = this.update.bind(this)
+    this.update = this.update.bind(this);
+    this.toggleCompletion = this.toggleCompletion.bind(this);
   }
 
   create(newTodo) {
@@ -45,6 +47,18 @@ class ToDoList extends Component {
     this.setState({ todos: updatedTodos });
   }
 
+  toggleCompletion(id) {
+    const updatedTodos = this.state.todos.map((item) => {
+      if (item.id === id) {
+        return { ...item, completed: !item.completed };
+      }
+
+      return item;
+    });
+
+    this.setState({ todos: updatedTodos });
+  }
+
   render() {
     const todos = this.state.todos.map((item) => {
       // console.log(this.state);
@@ -53,6 +67,8 @@ class ToDoList extends Component {
           key={item.id}
           id={item.id}
           task={item.task}
+          completed ={item.completed}
+          toggleTodo ={this.toggleCompletion}
           removeTodo={this.remove}
           updateTodo={this.update}
         />

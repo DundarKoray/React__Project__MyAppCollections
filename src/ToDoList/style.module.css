@@ -20,3 +20,8 @@
     border-radius: 5px;
     outline: none;
 }
+
+.completed {
+    color: lightgrey;
+    text-decoration: line-through;
+}
