@@ -47,8 +47,8 @@ class ToDo extends Component {
     let result;
     this.state.isEditing
       ? (result = (
-          <div className={styles.editRemove2}>
-            <form style={{display:"flex", width:"60%"}} onSubmit={this.handleUpdate}>
+          <div className={styles.modify}>
+            <form style={{display:"flex", width:"70%"}} onSubmit={this.handleUpdate}>
               <input className={styles.notCompleted2} type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
               <button className={styles.buttonSave} onClick={this.handleUpdate}> <FaSave /> </button>
             </form>
