@@ -7,7 +7,7 @@ class DadJokes extends Component {
             <div>
                 <InnerNavBar
           text="back"
-          link="https://github.com/DundarKoray/React__Project__GameCollections/tree/master/src/ToDoList"
+          link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
           />
                 Hello from DadJokes
             </div>
