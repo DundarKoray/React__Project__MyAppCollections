@@ -1,3 +1,6 @@
+// this component is for testing purpose only
+// it is not used in the application
+
 import React, { Component } from 'react';
 
 class Timer extends Component {
@@ -29,3 +32,14 @@ class Timer extends Component {
 }
 
 export default Timer;
+
+/*
+    QUESTION: What will print in console, by order?
+    
+    ANSWER: First Constructor, second render and last componentDidMount, however if state is change in componentDidMount then one more time render.
+
+    "HELLO FROM CONSTRUCTOR"
+    "HELLO FROM RENDER"
+    "HELLO FROM COMPONENT DID MOUNT"
+    "HELLO FROM RENDER"
+*/
