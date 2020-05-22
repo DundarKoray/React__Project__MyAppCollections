@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InnerNavBar from '../InnerNavBar/InnerNavBar';
+import Timer from './Timer';
 
 class DadJokes extends Component {
     render() {
@@ -9,7 +10,7 @@ class DadJokes extends Component {
           text="back"
           link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
           />
-                Hello from DadJokes
+                <Timer />
             </div>
         );
     }
