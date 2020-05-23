@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InnerNavBar from '../InnerNavBar/InnerNavBar';
-import ZenQuote from './ZenQuote';
+import ZenQuote from './Test_ZenQuote/ZenQuote';
 
 class DadJokes extends Component {
     render() {
