@@ -2,7 +2,7 @@
 // it is not used in the application
 
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
 import styles from "./zenQuote.module.css";
 
 class ZenQuote extends Component {
@@ -16,30 +16,35 @@ class ZenQuote extends Component {
   componentDidMount() {
     //load data
     // set state with that data
-    
-      
-      setTimeout(
-        function () {
-          this.setState({
-            quote: "to Smile",
-            isLoaded: true
-          });
-        }.bind(this),
-        3000
-      );
-    
+
+    console.log("HELLO FROM COMPONENT DID MOUNT")
+
+    setTimeout(
+      function () {
+        this.setState({
+          quote: "to Smile",
+          isLoaded: true,
+        });
+      }.bind(this),
+      3000
+    );
+  }
+
+  componentDidUpdate() {
+    console.log("HELLO FROM COMPONENT DID UPDATE")
   }
 
   render() {
+    console.log("HELLO FROM RENDER")
     return (
-      <div >
+      <div>
         {this.state.isLoaded ? (
           <div>
             <h1>Always remember...</h1>
             <p>{this.state.quote}</p>
           </div>
         ) : (
-          <div className={styles.loader}/>
+          <div className={styles.loader} />
         )}
       </div>
     );
