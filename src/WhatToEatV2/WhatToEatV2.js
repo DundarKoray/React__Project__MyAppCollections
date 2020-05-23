@@ -68,7 +68,7 @@ class WhatToEatV2 extends Component {
           breakpoint: 1023,
           settings: {
             slidesToScroll: 1,
-            
+            slidesToShow: 1,
           },
         },
         {
