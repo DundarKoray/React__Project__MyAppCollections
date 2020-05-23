@@ -6,9 +6,21 @@ import axios from 'axios';
 
 
 class ZenQuote extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            quote: ""
+        }
+    }
     componentDidMount() {
         //load data
         // set state with that data
+        axios.get("https://api.github.com/zen").then(response => {
+            console.log(response)
+            this.setState({
+                quote: response.data
+            })
+        })
     }
 
     render() {
