@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InnerNavBar from '../InnerNavBar/InnerNavBar';
-import ZenQuote from './Test_ZenQuote/ZenQuote';
+import ZenQuote from './Test_LoadingAnimation/ZenQuote';
+import GithubUserInfo from './Test_LoadingDataWithAsyncFunctions/GithubUserInfo';
 
 class DadJokes extends Component {
     render() {
@@ -10,7 +11,9 @@ class DadJokes extends Component {
           text="back"
           link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
           />
-                <ZenQuote />
+                <GithubUserInfo username="DundarKoray"/>
+                <GithubUserInfo username="StevePhuc"/>
+                
             </div>
         );
     }
