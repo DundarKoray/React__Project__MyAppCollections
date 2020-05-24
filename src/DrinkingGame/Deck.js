@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import axios from "axios";
 import WorkIsInProgress from "../images/workIsInProgress.png";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
-import axios from "axios";
+import Card from "./Card";
 
 const API_BASE_URL = "https://deckofcardsapi.com/api/deck";
 
@@ -55,6 +56,9 @@ class Deck extends Component {
   }
 
   render() {
+    const cards = this.state.drawnCards.map(item => {
+        return <Card name={item.name} image={item.image} key={item.id} />
+    })
     return (
       <div>
         <InnerNavBar
@@ -66,6 +70,7 @@ class Deck extends Component {
         <button onClick={this.getCard} className="btn-primary">
           Get Card
         </button>
+        {cards}
       </div>
     );
   }
