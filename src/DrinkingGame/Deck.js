@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-import WorkIsInProgress from "../images/workIsInProgress.png";
+// import WorkIsInProgress from "../images/workIsInProgress.png";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import Card from "./Card";
+import styles from "./card.module.css";
 
 const API_BASE_URL = "https://deckofcardsapi.com/api/deck";
 
@@ -56,22 +57,27 @@ class Deck extends Component {
   }
 
   render() {
-    const cards = this.state.drawnCards.map(item => {
-        return <Card name={item.name} image={item.image} key={item.id} />
-    })
+    const cards = this.state.drawnCards.map((item) => {
+      return <Card name={item.name} image={item.image} key={item.id} />;
+    });
     return (
-      <div>
+        <div>
+
         <InnerNavBar
           text="back"
           link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
-        />
-        <img src={WorkIsInProgress} />
+          />
+                  <div className={styles.deckWrapper}>
+        {/* <img src={WorkIsInProgress} /> */}
         <h1>Drinking Game</h1>
-        <button onClick={this.getCard} className="btn-primary">
+        <p>Play Responsibly!</p>
+        <p>This game is made with React</p>
+        <button onClick={this.getCard} className={styles.deckButton}>
           Get Card
         </button>
-        {cards}
+        <div className={styles.cardWrapper}>{cards}</div>
       </div>
+          </div>
     );
   }
 }

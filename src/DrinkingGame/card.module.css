@@ -1,3 +1,36 @@
 .card{
-    
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+
+}
+
+.cardWrapper {
+    margin-top: 80px;
+    position: relative;
+}
+
+.deckWrapper {
+    background-color: #17181c;
+    padding: 2rem;
+    height: 700px;
+}
+
+.deckButton {
+    background: none;
+    border: 2px solid;
+    outline: none;
+    font: inherit;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #4caf50;
+    transition: 0.3s;
+}
+
+.deckButton:hover {
+    border-color: #4caf50;
+    color: white;
+    box-shadow: inset 0 0 0 2em #4caf50;
 }
