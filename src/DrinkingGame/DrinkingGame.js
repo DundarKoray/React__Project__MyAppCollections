@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import WorkIsInProgress from '../images/workIsInProgress.png';
 import InnerNavBar from '../InnerNavBar/InnerNavBar';
-import ZenQuote from './Test_LoadingAnimation/ZenQuote';
-// import GithubUserInfo from './Test_LoadingDataWithAsyncFunctions/GithubUserInfo';
-import WorkIsInProgress from '../images/workIsInProgress.png'
 
-class DadJokes extends Component {
+class DrinkingGame extends Component {
     render() {
         return (
             <div>
@@ -12,11 +10,10 @@ class DadJokes extends Component {
           text="back"
           link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
           />
-                <img src={WorkIsInProgress}/>
-                
+                <img src={WorkIsInProgress} />
             </div>
         );
     }
 }
 
-export default DadJokes;
+export default DrinkingGame;

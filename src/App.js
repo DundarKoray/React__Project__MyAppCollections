@@ -13,6 +13,7 @@ import FlipCoinV2 from './FlipCoinV2/App'
 // import WhatToEat from "./WhatToEat/App";
 import WhatToEatV2 from "./WhatToEatV2/App";
 import DadJokes from "./DadJokes/App";
+import DrinkingGame from "./DrinkingGame/App";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         {/* <Route  path="/whatToEat" component={WhatToEat} exact /> */}
         <Route  path="/whatToEatV2" component={WhatToEatV2} exact />
         <Route  path="/dadJokes" component={DadJokes} exact />
+        <Route  path="/drinkingGame" component={DrinkingGame} exact />
       </Switch>
     </Layout>
     </BrowserRouter>
