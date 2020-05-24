@@ -15,7 +15,7 @@
 .deckWrapper {
     background-color: #17181c;
     padding: 2rem;
-    height: 1700px;
+    height: 2600px;
 }
 
 .deckButton {
@@ -40,8 +40,14 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 700px;
+    top: 800px;
     margin: auto;
+}
+
+ul {
+
+    
+     margin: 0;
 }
 
 li {

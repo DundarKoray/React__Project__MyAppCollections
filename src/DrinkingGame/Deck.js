@@ -79,7 +79,7 @@ class Deck extends Component {
         <div className={styles.rules}>
 
         <h2>Rules</h2>
-        <ul style={{width:"50%", textAlign:"left", margin: "auto", listStyle:"none"}}>
+        <ul style={{padding:"1rem",width:"90%", textAlign:"left", margin: "auto", listStyle:"none"}}>
             <li>A: Waterfall - Every player begins drinking, and no one can stop until the player before them does </li>
             <li>2: The person who picks the card picks someone else to drink. </li>
             <li>3: The person who picks the card drinks. </li>
