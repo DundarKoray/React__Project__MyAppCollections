@@ -43,12 +43,20 @@ class JokeList extends Component {
           link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
         />
         <img style={{ width: "250px" }} src={WorkIsInProgress} />
-        <div className={styles.jokeWrap}>
-          <h1>Dad Jokes</h1>
-          <div className={styles.joke}></div>
-          {this.state.jokes.map((j) => {
-            return <div>{j}</div>;
-          })}
+        <div className={styles.app}>
+          <div className={styles.jokeWrap}>
+            <div className={styles.sidebar}>
+              <h1 className={styles.title}><span className={styles.titleSpan}>Dad</span> Jokes</h1>
+              <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg"/>
+              <button>New Jokes</button>
+            </div>
+            <div className={styles.jokes}>
+
+            {this.state.jokes.map((j, index) => {
+                return <div key={index}>{j}</div>;
+            })}
+            </div>
+          </div>
         </div>
       </div>
     );
