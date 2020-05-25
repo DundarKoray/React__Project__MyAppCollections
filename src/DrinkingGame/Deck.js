@@ -65,7 +65,7 @@ class Deck extends Component {
 
         <InnerNavBar
           text="back"
-          link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
+          link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DrinkingGame"
           />
                   <div className={styles.deckWrapper}>
         {/* <img src={WorkIsInProgress} /> */}
