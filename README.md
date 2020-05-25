@@ -1,6 +1,6 @@
 # React Game Collections
 
-Hello! Welcome to my React playground! Here, I make small fun React apps in order to maintain my coding skills.
+Hello! Welcome to my React playground! Here, I make small fun React apps in order to maintain my coding skills and also just to have fun!
 
 # Demo
 Click the link below to see the app. <br/>
