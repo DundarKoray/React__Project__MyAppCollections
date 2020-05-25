@@ -1,7 +1,7 @@
 import React from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
-import DadJokes from './DadJokes';
+import JokeList from './JokeList';
 
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <div>
             <SimpleHero>
                 <Banner>
-                    <DadJokes />
+                    <JokeList />
                 </Banner>    
             </SimpleHero>            
         </div>
