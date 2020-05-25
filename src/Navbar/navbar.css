@@ -27,8 +27,13 @@
   overflow: hidden;
   text-align: center;
 }
+
+.nav-links li {
+  margin-bottom: 0;
+}
+
 .show-nav {
-  height: 120px;
+  height: 130px;
   text-align: center;
 }
 .nav-links a {
