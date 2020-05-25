@@ -1,21 +1,20 @@
 .card{
     position: absolute;
-    left: 0;
+    left: 20px;
+    top: 70px;
     right: 0;
     margin: auto;
-    width: 150px;
+    width: 125px;
 
 }
 
 .cardWrapper {
-    margin-top: 80px;
     position: relative;
 }
 
 .deckWrapper {
     background-color: #17181c;
     padding: 2rem;
-    height: 2600px;
 }
 
 .deckButton {
@@ -37,19 +36,19 @@
 }
 
 .rules {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 800px;
-    margin: auto;
+    letter-spacing: 1px;
+    word-spacing: -3px;
+    margin-top: 3rem;
+    font-size: .8rem;
 }
 
 ul {
-
     
-     margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 li {
+    
     margin-bottom: 2rem;
 }

@@ -71,11 +71,11 @@ class Deck extends Component {
         {/* <img src={WorkIsInProgress} /> */}
         <h1>Drinking Game</h1>
         <p>Play Responsibly!</p>
-        <p>This game is made with React</p>
+        <div className={styles.cardWrapper}>{cards}</div>
+        <div style={{margin:"auto",width:"250px",height: "300px", border:"1px solid green"}}></div>
         <button onClick={this.getCard} className={styles.deckButton}>
           Get Card
         </button>
-        <div className={styles.cardWrapper}>{cards}</div>
         <div className={styles.rules}>
 
         <h2>Rules</h2>
