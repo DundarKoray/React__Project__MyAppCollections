@@ -11,10 +11,17 @@ class Joke extends Component {
     return (
       <div className={styles.joke}>
         <div className={styles.jokeButtons}>
-          <button onClick={this.props.upVote}><FaArrowUp /></button> <span>{this.props.votes}</span> <button onClick={this.props.downVote}><FaArrowDown /></button>
+          <button className={styles.btnVote} onClick={this.props.upVote}>
+            <FaArrowUp />
+          </button>
+          <span className={styles.jokeVote}>{this.props.votes}</span>
+          <button className={styles.btnVote} onClick={this.props.downVote}>
+            <FaArrowDown />
+          </button>
         </div>
-        <div className={styles.jokeText}>
-            {this.props.jokeText}
+        <div className={styles.jokeText}>{this.props.jokeText}</div>
+        <div className={styles.jokeSmiley}>
+        <i class="em em-rolling_on_the_floor_laughing" aria-role="presentation" aria-label="ROLLING ON THE FLOOR LAUGHING"></i>
         </div>
       </div>
     );
