@@ -69,6 +69,7 @@
     width: 65%;
     overflow: scroll;
     box-shadow: var(--normalShadow);
+    
 }
 
 
@@ -103,6 +104,11 @@
     font-weight: 300;
     /* border: 3px solid red; */
     box-shadow: var(--normalShadow);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 4px;
+        
 }
 
 .btnVote {
@@ -115,7 +121,6 @@
 
 .jokeSmiley {
     font-size: 2rem;
-    margin-left: auto;
     border-radius: 50%;
     box-shadow: var(--normalShadow);
 }
@@ -125,15 +130,122 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: rgba(240, 98, 146, 1);
 }
 
 .spinner {
     -webkit-animation:spin 1.5s linear infinite;
     -moz-animation:spin 1.5s linear infinite;
     animation:spin 1.5s linear infinite;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.spinnerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .app{
+        font-size: .8rem;
+    }
+
+
+    .jokeSmiley {
+        font-size: 1.3rem;
+       
+    }
+
+
+    .btnVote {
+        
+        font-size: 1.2rem;
+    }
+
+    .jokeVote {
+        width: 40px;
+        height: 40px;
+        padding: 1rem;
+        
+    }
+  }
+
+
+  @media only screen and (max-width: 720px) {
+    .app{
+        font-size: .7rem;
+    }
+
+
+    .jokeSmiley {
+        font-size: 1.2rem;
+       margin-top: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        margin: .5rem
+    }
+    
+    .sidebar {
+        width: 25%;
+    }
+
+    .sidebar img {
+        margin-bottom: 2rem;
+    }
+
+    .jokes {
+        width: 75%;
+    }
+
+    .jokeButtons {
+        margin-right: 0;
+        margin-bottom: .5rem;
+    }
+
+    .jokeVote {
+        margin: 1rem;
+        
+            padding: 1rem;
+            
+            
+    
+    }
+
+    .joke {
+        padding: .5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+  }
+
+
+
+  @media only screen and (max-width: 480px) {
+    
+
+    .sidebar {
+        width: 35%;
+    }
+
+    .jokes {
+        width: 65%;
+    }
+    
+    
+  }
