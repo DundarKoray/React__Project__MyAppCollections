@@ -21,6 +21,8 @@ class JokeList extends Component {
 
     this.handleVote = this.handleVote.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.seenJokes = new Set(this.state.jokes.map((j) => j.text));
+    console.log(this.seenJokes);
   }
 
   async componentDidMount() {
@@ -29,22 +31,32 @@ class JokeList extends Component {
     }
   }
   async getJokes() {
-    // Load Jokes and store 10 of them
-    let jokes = [];
-    while (jokes.length < this.props.numJokesToGet) {
-      let response = await axios.get("https://icanhazdadjoke.com/", {
-        headers: { Accept: "application/json" },
-      });
+    try {
+      // Load Jokes and store 10 of them
+      let jokes = [];
+      while (jokes.length < this.props.numJokesToGet) {
+        let response = await axios.get("https://icanhazdadjoke.com/", {
+          headers: { Accept: "application/json" },
+        });
 
-      // console.log(response.data.joke);
-      jokes.push({ text: response.data.joke, votes: 0, id: uuidv4() });
+        // console.log(response.data.joke);
+        if (!this.seenJokes.has(response.data.joke)) {
+          jokes.push({ text: response.data.joke, votes: 0, id: uuidv4() });
+        } else {
+          console.log("Found a duplicate");
+          console.log(response.data.joke);
+        }
+      }
+      // console.log(jokes)
+      this.setState(
+        (st) => ({ jokes: [...st.jokes, ...jokes], loading: false }),
+        () =>
+          window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
+      );
+    } catch (e) {
+      alert("Sorry, server maintanence, cannot download new jokes at the moment. Please try again later.");
+      this.setState({ loading: false });
     }
-    // console.log(jokes)
-    this.setState(
-      (st) => ({ jokes: [...st.jokes, ...jokes], loading: false }),
-      () =>
-        window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
-    );
     // console.log(this.state.jokes);
   }
 
@@ -81,7 +93,18 @@ class JokeList extends Component {
               <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
               <button onClick={this.handleClick}>New Jokes</button>
             </div>
-            <div style={this.state.loading ? {display:"flex", justifyContent:"center", alignItems:"center"} : null}className={styles.jokes}>
+            <div
+              style={
+                this.state.loading
+                  ? {
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }
+                  : null
+              }
+              className={styles.jokes}
+            >
               {this.state.loading ? (
                 <div className={styles.loader}>
                   <div className={styles.spinnerWrapper}>
@@ -106,7 +129,6 @@ class JokeList extends Component {
           </div>{" "}
           }
         </div>
-        
       </div>
     );
   }
