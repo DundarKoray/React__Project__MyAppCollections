@@ -106,7 +106,7 @@ class JokeList extends Component {
           </div>{" "}
           }
         </div>
-        )}
+        
       </div>
     );
   }
