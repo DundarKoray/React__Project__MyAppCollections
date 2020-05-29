@@ -179,6 +179,24 @@
         padding: 1rem;
         
     }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .jokes {
+        width: 75%;
+    }
+
+    .title {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        margin: .5rem
+    }
+
+    .sidebar img {
+        margin-bottom: 2rem;
+    }
   }
 
 
@@ -193,23 +211,13 @@
        margin-top: 1rem;
     }
 
-    .title {
-        font-size: 2rem;
-        letter-spacing: .3rem;
-        margin: .5rem
-    }
     
-    .sidebar {
-        width: 25%;
-    }
+    
+    
 
-    .sidebar img {
-        margin-bottom: 2rem;
-    }
+    
 
-    .jokes {
-        width: 75%;
-    }
+    
 
     .jokeButtons {
         margin-right: 0;
