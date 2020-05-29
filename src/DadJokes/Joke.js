@@ -49,11 +49,11 @@ class Joke extends Component {
     return (
       <div className={styles.joke}>
         <div className={styles.jokeButtons}>
-          <button className={styles.btnVote} onClick={this.props.upVote}>
+          <button className={styles.btnVoteUp} onClick={this.props.upVote}>
             <FaArrowUp />
           </button>
           <span className={styles.jokeVote} style={{border: `3px solid rgb(${this.getRGB(this.props.votes)})`}}>{this.props.votes}</span>
-          <button className={styles.btnVote} onClick={this.props.downVote}>
+          <button className={styles.btnVoteDown} onClick={this.props.downVote}>
             <FaArrowDown />
           </button>
         </div>

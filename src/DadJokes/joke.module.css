@@ -62,6 +62,10 @@
     box-shadow: var(--normalShadow);
 }
 
+.sidebar img:hover {
+    animation: spin 1.5s linear infinite ;
+}
+
 .jokes {
     height: 90%;
     background: white;
@@ -108,15 +112,31 @@
         justify-content: center;
         align-items: center;
         padding-left: 4px;
+    
         
 }
 
-.btnVote {
+.btnVoteUp,.btnVoteDown {
     font-size: 1.5rem;
     cursor: pointer;
     outline: none;
     border: none;
     background: transparent;
+    transition: all 0.3s;
+    
+}
+
+.btnVoteUp:hover {
+    animation: move-up 1s linear  ;
+    animation-iteration-count: 3;
+    color: green;
+}
+
+.btnVoteDown:hover {
+    animation: move-down 1s linear;
+    animation-iteration-count: 3;
+    color: red;
+    
 }
 
 .jokeSmiley {
@@ -124,6 +144,12 @@
     border-radius: 50%;
     box-shadow: var(--normalShadow);
 }
+
+.jokeSmiley:hover {
+    animation:spin 1s linear infinite;
+
+}
+
 
 .loader {
     display: flex;
@@ -148,9 +174,62 @@
     flex-direction: column;
 }
 
+.getMoreButton {
+    font-size: 1.5rem;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 700;
+    margin: 2rem;
+    border: none;
+    outline: none;
+    word-spacing: .2rem;
+    cursor: pointer;
+    transition: .8s cubic-bezier(0.2, 1, 0.2, 1);
+    background: linear-gradient(
+        135deg,
+        rgba(179, 229, 252, 1) 0%,
+        rgba(179, 229, 252, 1) 50%,
+        rgba(240, 98, 146, 1) 50%,
+        rgba(240, 98, 146, 1) 100%
+    );
+    box-shadow: var(--normalShadow);
+}
+
+.getMoreButton:hover {
+    transform: translate(-2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes move-up {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0)
+    }
+    25%,
+    75% {
+        transform: translateY(-3px);
+    }
+}
+
+
+@keyframes move-down {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0)
+    }
+    25%,
+    75% {
+        transform: translateY(3px);
+    }
+}
 
 
 
@@ -168,7 +247,7 @@
     }
 
 
-    .btnVote {
+    .btnVoteUp, .btnVoteDown {
         
         font-size: 1.2rem;
     }
@@ -197,6 +276,14 @@
     .sidebar img {
         margin-bottom: 2rem;
     }
+
+
+    .getMoreButton {
+        width: 80%;
+        padding: .5rem 1rem;
+    }
+
+
   }
 
 
@@ -209,6 +296,11 @@
     .jokeSmiley {
         font-size: 1.2rem;
        margin-top: 1rem;
+    }
+
+    .getMoreButton {
+        
+        font-size: 1rem ;
     }
 
     

@@ -6,6 +6,7 @@ import axios from "axios";
 import styles from "./joke.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { FaLaugh } from "react-icons/fa";
+import {Animated} from "react-animated-css";
 
 class JokeList extends Component {
   static defaultProps = {
@@ -77,6 +78,7 @@ class JokeList extends Component {
   }
 
   render() {
+    let jokesSorted = this.state.jokes.sort((a,b) => b.votes - a.votes)
     return (
       <div>
         <InnerNavBar
@@ -90,8 +92,12 @@ class JokeList extends Component {
               <h1 className={styles.title}>
                 <span className={styles.titleSpan}>Dad</span> Jokes
               </h1>
+              
+              
+              <Animated animationIn="shake" animationOut="shake" animationInDuration={5000} animationOutDuration={5000} isVisible={true}>
               <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
-              <button onClick={this.handleClick}>New Jokes</button>
+</Animated>
+              <button className={styles.getMoreButton} onClick={this.handleClick}>New Jokes</button>
             </div>
             <div
               style={
@@ -113,7 +119,7 @@ class JokeList extends Component {
                   </div>
                 </div>
               ) : (
-                this.state.jokes.map((j) => {
+                jokesSorted.map((j) => {
                   return (
                     <Joke
                       jokeText={j.text}
