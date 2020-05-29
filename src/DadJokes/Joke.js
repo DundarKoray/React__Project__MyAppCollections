@@ -61,8 +61,8 @@ class Joke extends Component {
         <div className={styles.jokeSmiley}>
           <i
             className={this.getEmoji()}
-            aria-role="presentation"
-            aria-label="ROLLING ON THE FLOOR LAUGHING"
+            ariarole="presentation"
+            arialabel="ROLLING ON THE FLOOR LAUGHING"
           ></i>
         </div>
       </div>

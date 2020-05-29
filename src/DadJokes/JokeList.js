@@ -14,30 +14,36 @@ class JokeList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      jokes: [],
+      jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]")
     };
 
     this.handleVote = this.handleVote.bind(this);
   }
 
   async componentDidMount() {
-    // Load Jokes and store 10 of them
-    let jokes = [];
-    while (jokes.length < this.props.numJokesToGet) {
-      let response = await axios.get("https://icanhazdadjoke.com/", {
-        headers: { Accept: "application/json" },
-      });
-
-      // console.log(response.data.joke);
-      jokes.push({ text: response.data.joke, votes: 0, id: uuidv4() });
+    if(this.state.jokes.length === 0){
+      this.getJokes()
     }
-    // console.log(jokes)
-    this.setState({
-      jokes: jokes,
-    });
-
-    // console.log(this.state.jokes);
   }
+  async getJokes() {
+// Load Jokes and store 10 of them
+let jokes = [];
+while (jokes.length < this.props.numJokesToGet) {
+  let response = await axios.get("https://icanhazdadjoke.com/", {
+    headers: { Accept: "application/json" },
+  });
+
+  // console.log(response.data.joke);
+  jokes.push({ text: response.data.joke, votes: 0, id: uuidv4() });
+}
+// console.log(jokes)
+this.setState({ jokes: jokes });
+window.localStorage.setItem("jokes", JSON.stringify(jokes))
+
+
+// console.log(this.state.jokes);
+  }
+
   handleVote(id, change) {
    this.setState(st => ({
      jokes: st.jokes.map(j =>
