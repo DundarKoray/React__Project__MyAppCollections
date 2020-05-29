@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
-import WorkIsInProgress from "../images/workIsInProgress.png";
+// import WorkIsInProgress from "../images/workIsInProgress.png";
 import Joke from "./Joke";
 import axios from "axios";
 import styles from "./joke.module.css";
 import { v4 as uuidv4 } from "uuid";
+import { FaLaugh } from "react-icons/fa";
 
 class JokeList extends Component {
   static defaultProps = {
@@ -15,6 +16,7 @@ class JokeList extends Component {
     super(props);
     this.state = {
       jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]"),
+      loading: false,
     };
 
     this.handleVote = this.handleVote.bind(this);
@@ -39,7 +41,7 @@ class JokeList extends Component {
     }
     // console.log(jokes)
     this.setState(
-      (st) => ({ jokes: [...st.jokes, ...jokes] }),
+      (st) => ({ jokes: [...st.jokes, ...jokes], loading: false }),
       () =>
         window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
     );
@@ -59,7 +61,7 @@ class JokeList extends Component {
   }
 
   handleClick() {
-    this.getJokes();
+    this.setState({ loading: true }, this.getJokes);
   }
 
   render() {
@@ -69,31 +71,38 @@ class JokeList extends Component {
           text="back"
           link="https://github.com/DundarKoray/React__Project__MyAppCollections/tree/master/src/DadJokes"
         />
-        <img style={{ width: "250px" }} src={WorkIsInProgress} />
-        <div className={styles.app}>
-          <div className={styles.jokeWrap}>
-            <div className={styles.sidebar}>
-              <h1 className={styles.title}>
-                <span className={styles.titleSpan}>Dad</span> Jokes
-              </h1>
-              <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
-              <button onClick={this.handleClick}>New Jokes</button>
-            </div>
-            <div className={styles.jokes}>
-              {this.state.jokes.map((j) => {
-                return (
-                  <Joke
-                    jokeText={j.text}
-                    votes={j.votes}
-                    key={j.id}
-                    upVote={() => this.handleVote(j.id, 1)}
-                    downVote={() => this.handleVote(j.id, -1)}
-                  />
-                );
-              })}
-            </div>
+        {/* <img style={{ width: "250px" }} src={WorkIsInProgress} /> */}
+       
+          <div className={styles.app}>
+            {this.state.loading ? <div className={styles.loader}>
+            
+            <FaLaugh size="100" className={styles.spinner} animate="spin" />
+            Loading...
+          </div> : <div className={styles.jokeWrap}>
+              <div className={styles.sidebar}>
+                <h1 className={styles.title}>
+                  <span className={styles.titleSpan}>Dad</span> Jokes
+                </h1>
+                <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
+                <button onClick={this.handleClick}>New Jokes</button>
+              </div>
+              <div className={styles.jokes}>
+                {this.state.jokes.map((j) => {
+                  return (
+                    <Joke
+                      jokeText={j.text}
+                      votes={j.votes}
+                      key={j.id}
+                      upVote={() => this.handleVote(j.id, 1)}
+                      downVote={() => this.handleVote(j.id, -1)}
+                    />
+                  );
+                })}
+              </div>
+            </div> }
+            
           </div>
-        </div>
+        )}
       </div>
     );
   }
