@@ -13,6 +13,7 @@ import chickenKebap from './images/chickenKebap.jpg';
 import kadinBuduKöfte from './images/kadinBuduKofte.jpg';
 import chickenNoodle from './images/chickenNoodle.jpg';
 import italianChickenPasta from './images/italian_chicken_pasta.jpg';
+import sweetpatatoCurry from './images/sweetpatato_curry.jpg';
 
 // dessert
 import mansikkaRahka from './images/mansikkaRahka.jpg';
@@ -74,22 +75,25 @@ const MAIN_FOODS = [
     name: "Lasagne",
     link: "https://www.k-ruoka.fi/reseptit/lasagne",
     ingredients: ["minced meat", "carrot", "cheese"],
-    image:
-      lasagne,
+    image: lasagne,
   },
   {
     name: "Turkish Chicken Kebap",
     link: "https://www.thespruceeats.com/basic-turkish-chicken-kebab-3274263",
     ingredients: ["chicken", "tomato paste", "bulgur"],
-    image:
-      chickenKebap,
+    image: chickenKebap,
   },
   {
     name: "Lady's Thigh",
     link: "https://www.youtube.com/watch?v=GTqqvySCuI0",
     ingredients: ["minced meat", "onion", "rice", "flour", "parsley", "salt", "blackpepper", "egg"],
-    image:
-      kadinBuduKöfte,
+    image: kadinBuduKöfte,
+  },
+  {
+    name: "Sweet Patato Chickpeas Curry",
+    link: "https://www.k-ruoka.fi/reseptit/bataatticurry",
+    ingredients: ["sweet patato", "chickpeas", "rice", "spinach", "turmaric"],
+    image: sweetpatatoCurry,
   },
 ];
 
