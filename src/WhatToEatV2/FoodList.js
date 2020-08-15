@@ -10,14 +10,15 @@ import mooseMeatBalls from "./images/mooseMeatBalls.jpg";
 import salmonOvenVeggies from "./images/salmonOvenVeggies.jpg";
 import lasagne from './images/lasagne.jpg';
 import chickenKebap from './images/chickenKebap.jpg';
-import kadinBuduKöfte from './images/kadinBuduKofte.jpg'
-import chickenNoodle from './images/chickenNoodle.jpg'
+import kadinBuduKöfte from './images/kadinBuduKofte.jpg';
+import chickenNoodle from './images/chickenNoodle.jpg';
+import italianChickenPasta from './images/italian_chicken_pasta.jpg';
 
 // dessert
 import mansikkaRahka from './images/mansikkaRahka.jpg';
 import blueberryPie from './images/mustikkapiirakka.jpg';
-import cremeCaramel from './images/cremeCaramel.webp'
-import korvapuusti from './images/cinnamonBun.webp'
+import cremeCaramel from './images/cremeCaramel.webp';
+import korvapuusti from './images/cinnamonBun.webp';
 
 const MAIN_FOODS = [
   {
@@ -25,6 +26,12 @@ const MAIN_FOODS = [
     link: "https://downshiftology.com/recipes/zucchini-noodles-with-chicken-spinach-parmesan/",
     ingredients: ["zucchini", "chicken", "spaghetti"],
     image: zucchiniChicken,
+  },
+  {
+    name: "Italian Chicken Paste Cassorell",
+    link: "https://yhteishyva.fi/reseptit/italian-mamman-broilerivuoka/recipe-23406",
+    ingredients: ["pasta", "chicken", "zucchini"],
+    image: italianChickenPasta,
   },
   {
     name: "Chicken Noodle Wok",

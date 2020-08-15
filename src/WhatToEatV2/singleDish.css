@@ -82,6 +82,11 @@
     transition: var(--mainTransition);
     cursor: pointer;
 }
+
+.howToCookButton:hover {
+    background-color: var(--primaryColor);
+    color: white;
+  }
   
   
   

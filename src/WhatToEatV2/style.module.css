@@ -38,10 +38,6 @@
     transition: var(--mainTransition);
     cursor: pointer;
 }
-  
-  
-
-
   .foodCard {
     width: 90%;
     margin: auto;
