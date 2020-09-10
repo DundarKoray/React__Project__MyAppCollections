@@ -7,6 +7,7 @@ import makaroniLaatikko from "./images/makaroniLaatikko.jpg";
 import adanaKebap from "./images/adana.jpg";
 import guinnesBeefStew from "./images/guinnesBeefStew.jpg";
 import mooseMeatBalls from "./images/mooseMeatBalls.jpg";
+import cabbageCassorele from "./images/cabbageCasserole.jpg";
 import salmonOvenVeggies from "./images/salmonOvenVeggies.jpg";
 import lasagne from './images/lasagne.jpg';
 import chickenKebap from './images/chickenKebap.jpg';
@@ -63,6 +64,12 @@ const MAIN_FOODS = [
     link: "https://anna.fi/reseptit/hirvipullat-jaloviinakermakastikkeessa",
     ingredients: ["moose minced meat", "carrot", "cellery", "patato"],
     image: mooseMeatBalls,
+  },
+  {
+    name: "Cabbage Casserole",
+    link: "https://yhteishyva.fi/reseptit/kaalilaatikko/recipe-4544",
+    ingredients: ["cabbage", "minced meat", "onion", "rice"],
+    image: cabbageCassorele,
   },
   {
     name: "Salmon and Oven Vegies",

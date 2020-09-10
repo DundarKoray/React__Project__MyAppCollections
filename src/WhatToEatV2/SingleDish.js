@@ -11,7 +11,7 @@ const SingleDish = (props) => {
 
           </div>
         <div style={{height:'200px', overflow:'hidden'}}>
-        <img alt="dishes" style={{width: '100%', margin:'auto'}} src={image}/>
+        <img loading="lazy" alt="dishes" style={{width: '100%', margin:'auto'}} src={image}/>
 
         </div>
       </div>
