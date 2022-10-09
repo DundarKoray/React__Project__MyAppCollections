@@ -89,6 +89,13 @@ const Home = () => {
           >
             Drinking Game
           </Link>
+          <Link 
+            style={{ margin: "10px", width: "250px"}}
+            className="btn-primary"
+            to="/tours"
+          >
+            Tours
+          </Link>
         </div>
       </Banner>
     </SimpleHero>
