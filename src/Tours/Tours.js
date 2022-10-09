@@ -1,6 +1,9 @@
-import React from 'react';
 import Tour from './Tour';
-const Tours = () => {
+
+const Tours = ({tours}) => {
+  // console.log(props.tours)
+  // console.log(tours)
+
   return <h2>tours component</h2>;
 };
 

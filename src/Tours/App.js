@@ -34,8 +34,10 @@ const App = () => {
         <div>
             <SimpleHero>
                 <Banner>
-                    {loading ? <Loading /> : <Tours />}
-                    
+                    {loading 
+                        ? <Loading /> 
+                        : <Tours tours={tours} />
+                    }   
                 </Banner>    
             </SimpleHero>            
         </div>

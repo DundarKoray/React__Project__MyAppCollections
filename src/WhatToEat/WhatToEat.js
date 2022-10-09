@@ -1,6 +1,6 @@
 import { randomMainFood, randomLunch, randomDessert } from "./FoodList";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
-import React, { Component } from "react";
+import { Component } from "react";
 import styles from "./style.module.css";
 import SingleDish from "./SingleDish";
 

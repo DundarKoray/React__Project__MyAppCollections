@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './banner.module.css';
 
 const Banner = ( { title, info, children } ) => {

@@ -1,6 +1,6 @@
 import { dinnerData, lunchData, dessertData } from "./FoodList";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
-import React, { Component } from "react";
+import { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
