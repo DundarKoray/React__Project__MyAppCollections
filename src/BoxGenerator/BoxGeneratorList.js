@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import BoxGenerator from "./BoxGenerator";
 import Form from "./Form";
 import styles from './style.module.css'

@@ -1,4 +1,3 @@
-import React from "react"
 import { FaInstagram, FaGithub, FaAtlas } from "react-icons/fa"
 export default [
   {

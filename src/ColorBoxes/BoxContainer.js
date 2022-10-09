@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Box from "./Box";
 import "./BoxContainer.css";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";

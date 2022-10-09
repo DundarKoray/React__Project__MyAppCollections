@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import styles from "./joke.module.css";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 

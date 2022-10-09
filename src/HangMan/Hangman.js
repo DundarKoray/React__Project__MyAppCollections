@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { randomWord } from "./words";
 import "./Hangman.css";
 import img0 from "./0.jpg";

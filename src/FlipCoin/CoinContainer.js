@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Coin from "./Coin";
 import { choice } from "./helpers";
 import headsPic from "./heads.png";

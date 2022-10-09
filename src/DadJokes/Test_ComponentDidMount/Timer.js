@@ -1,7 +1,7 @@
 // this component is for testing purpose only
 // it is not used in the application
 
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class Timer extends Component {
     constructor(props) {

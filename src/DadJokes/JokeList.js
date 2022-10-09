@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 // import WorkIsInProgress from "../images/workIsInProgress.png";
 import Joke from "./Joke";

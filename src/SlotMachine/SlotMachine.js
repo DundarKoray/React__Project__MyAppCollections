@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from "react";
 import "./slotMachine.css";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 
-class SlotMachine extends React.Component {
+class SlotMachine extends Component {
   constructor(props) {
     super(props);
     this.state = {

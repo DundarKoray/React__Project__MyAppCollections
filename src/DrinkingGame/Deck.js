@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import axios from "axios";
 // import WorkIsInProgress from "../images/workIsInProgress.png";
 import InnerNavBar from "../InnerNavBar/InnerNavBar";

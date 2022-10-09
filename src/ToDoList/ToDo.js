@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { FaTrashAlt, FaEdit, FaSave } from "react-icons/fa";
 import styles from "./style.module.css";
 

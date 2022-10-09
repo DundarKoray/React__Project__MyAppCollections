@@ -1,7 +1,7 @@
 
 import SimpleHero from "../SimpleHero/SimpleHero";
 import Banner from "../Banner/Banner";
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Loading from './Loading'
 import Tours from './Tours'
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import headsPic from "./heads.png";
 import tailsPic from "./tails.png";
 import {flip} from './helpers';

@@ -1,7 +1,7 @@
 // this component is for testing purpose only
 // it is not used in the application
 
-import React, { Component } from "react";
+import { Component } from "react";
 // import axios from "axios";
 import styles from "./zenQuote.module.css";
 
