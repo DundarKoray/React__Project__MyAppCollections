@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './tour.module.css'
+import styles from './tour.module.scss'
 
 const Tour = ({id, image, info, price, name}) => {
 

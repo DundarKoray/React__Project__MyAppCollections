@@ -1,5 +1,5 @@
 import Tour from './Tour';
-import styles from './tours.module.css'
+import styles from './tours.module.scss'
 
 const Tours = ({tours}) => {
   // console.log(props.tours)
@@ -7,9 +7,9 @@ const Tours = ({tours}) => {
 
   return (
     <section className={styles.tours}>
-      <div className='title'>
-        <h2>Our tours</h2>
-        <div className='underline'></div>
+      <div className={styles.title}>
+        <h1>Our tours</h1>
+        <div className={styles.underline}></div>
       </div>
       <div>
         {tours.map((tour) => {
