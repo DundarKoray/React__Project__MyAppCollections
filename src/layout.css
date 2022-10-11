@@ -50,8 +50,7 @@ a {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   outline: none;
-  
-  
+  text-align: center;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;

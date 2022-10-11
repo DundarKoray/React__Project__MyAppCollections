@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import { useState, useEffect } from 'react'
 import Loading from './Loading'
 import Tours from './Tours'
+import InnerNavBar from "../InnerNavBar/InnerNavBar";
 
 const url = "https://course-api.com/react-tours-project";
 
@@ -34,6 +35,7 @@ const App = () => {
         <div>
             <SimpleHero>
                 <Banner>
+                    <InnerNavBar />
                     {loading 
                         ? <Loading /> 
                         : <Tours tours={tours} />

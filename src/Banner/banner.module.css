@@ -1,6 +1,4 @@
 .banner {
-  text-align: center;
-  letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
   padding: 1rem;
   width: 100%;
@@ -12,7 +10,6 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   padding: 0 1rem;
-  letter-spacing: 6px;
 }
 .banner-info {
   width: 85%;
@@ -30,8 +27,6 @@
   .banner{
     max-width: 1170px;
     margin: 0 auto;
-    
-    
   }
 }
 
