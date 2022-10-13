@@ -8,7 +8,7 @@ const Tours = ({tours}) => {
   return (
     <section className={styles.tours}>
       <div className={styles.title}>
-        <h1>Our tours</h1>
+        <h1>Our Tours</h1>
         <div className={styles.underline}></div>
       </div>
       <div>
