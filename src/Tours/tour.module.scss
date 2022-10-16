@@ -32,9 +32,18 @@
         color: var(--primaryColor)
     }
 
-    button {
+    button.notInterested {
         width: 100%;
     }
+    button.toggle {
+        background: transparent;
+        color: var(--primaryColor);
+        border: transparent;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    
 }
   
     
