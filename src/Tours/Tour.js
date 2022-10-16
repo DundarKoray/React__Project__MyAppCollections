@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './tour.module.scss'
 
-const Tour = ({id, image, info, price, name}) => {
+const Tour = ({id, image, info, price, name, removeTour}) => {
   const [readMore, setReadMore] = useState(false)
   return (
     <article className={styles.tour} key={id}>
@@ -12,8 +12,8 @@ const Tour = ({id, image, info, price, name}) => {
           <h4 className={styles.tourPrice}>€{price}</h4>
         </div>
         <p>
-          {readMore ? info :`${info.substring(0, 200)}...`}  <button class={styles.toggle} onClick={()=> setReadMore(!readMore)}>{readMore ? "Show less" : "Read more"}</button></p>
-        <button className={`btn-primary ${styles.notInterested}`}>Not interested</button>
+          {readMore ? info :`${info.substring(0, 200)}...`}  <button className={styles.toggle} onClick={()=> setReadMore(!readMore)}>{readMore ? "Show less" : "Read more"}</button></p>
+        <button onClick={()=>removeTour(id)}className={`btn-primary ${styles.notInterested}`}>Not interested</button>
       </div>
 
     </article>

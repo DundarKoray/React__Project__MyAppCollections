@@ -1,7 +1,7 @@
 import Tour from './Tour';
 import styles from './tours.module.scss'
 
-const Tours = ({tours}) => {
+const Tours = ({tours, removeTour}) => {
   // console.log(props.tours)
   // console.log(tours)
 
@@ -14,7 +14,7 @@ const Tours = ({tours}) => {
       <div>
         {tours.map((tour) => {
           console.log(tour);
-          return <Tour key={tour.id} {...tour}></Tour>
+          return <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>
         })}
       </div>
     </section>
