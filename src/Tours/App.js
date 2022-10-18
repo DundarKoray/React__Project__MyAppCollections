@@ -36,18 +36,24 @@ const App = () => {
     useEffect(() => {
         fetchTours();
     }, []);
-
+    
     return (
         <div>
             <SimpleHero>
                 <Banner>
                     <InnerNavBar />
                     <div className="tours-app">
-
-                    {loading 
-                        ? <Loading /> 
-                        : <Tours tours={tours} removeTour={removeTour}/>
-                    }   
+                        {tours.length === 0 
+                            ? 
+                                <div> 
+                                    <h2>No tours left!</h2>
+                                    <button className="btn-primary" onClick={()=>{fetchTours()}}>Refresh</button>
+                                </div> 
+                            :   
+                                loading 
+                                ? <Loading /> 
+                                : <Tours tours={tours} removeTour={removeTour}/>      
+                        }
                     </div>
                 </Banner>    
             </SimpleHero>            
