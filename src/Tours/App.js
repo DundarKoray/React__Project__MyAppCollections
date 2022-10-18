@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import Loading from './Loading'
 import Tours from './Tours'
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
-import './App.scss';
+import styles from './app.module.scss';
 
 const url = "https://course-api.com/react-tours-project";
 
@@ -42,7 +42,13 @@ const App = () => {
             <SimpleHero>
                 <Banner>
                     <InnerNavBar />
-                    <div className="tours-app">
+                    <div className={styles.goals}>
+                        Goals
+                        <br />1: Fetch the data from JSON API and list all the tours.
+                        <br />2: Add a remove button for each tour where it deletes the tour from the list.
+                        <br />3: When there is no tours left, make refresh button appear to print all the tours again.
+                    </div>
+                    <div className={styles.toursApp}>
                         {tours.length === 0 
                             ? 
                                 <div> 
