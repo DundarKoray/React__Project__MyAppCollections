@@ -96,6 +96,13 @@ const Home = () => {
           >
             Tours
           </Link>
+          <Link 
+            style={{ margin: "10px", width: "250px"}}
+            className="btn-primary"
+            to="/reviews"
+          >
+            Reviews
+          </Link>
         </div>
       </Banner>
     </SimpleHero>

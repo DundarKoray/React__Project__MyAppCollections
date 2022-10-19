@@ -14,6 +14,7 @@ import WhatToEatV2 from "./WhatToEatV2/App";
 import DadJokes from "./DadJokes/App";
 import DrinkingGame from "./DrinkingGame/App";
 import Tours from "./Tours/App";
+import Reviews from "./Reviews/App";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route  path="/dadJokes" component={DadJokes} exact />
         <Route  path="/drinkingGame" component={DrinkingGame} exact />
         <Route  path="/tours" component={Tours} exact />
+        <Route  path="/reviews" component={Reviews} exact />
       </Switch>
     </Layout>
     </BrowserRouter>
