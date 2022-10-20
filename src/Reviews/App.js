@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import styles from './app.module.scss';
 import Review from './Review';
+import Title from '../Title/Title';
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
                         <br />2: Add buttons by using React Icons for showing previous and next review.
                         <br />2: Add a button which shows a random button.
                     </div>
+                    <main> 
+                        <Title title={'Reviews'} />
+                    </main>
                 </Banner>    
             </SimpleHero>            
         </div>
