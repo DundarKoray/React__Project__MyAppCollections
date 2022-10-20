@@ -20,7 +20,8 @@ function App() {
                         <br />2: Add a button which shows a random button.
                     </div>
                     <main> 
-                        <Title title={'Reviews'} />
+                        <Title title={'Our Reviews'} />
+                        <Review />
                     </main>
                 </Banner>    
             </SimpleHero>            
