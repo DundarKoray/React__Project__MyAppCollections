@@ -12,8 +12,9 @@ function App() {
                 <InnerNavBar />
                 <div className={styles.goals}>
                     Goals
-                    <br />1: Fetch the data from JSON API and list all reviews inside a custom slider.
-                    <br />2: Add a button for swapping slider.
+                    <br />1: Fetch the data from JSON API and list only one review at a time.
+                    <br />2: Add a button for showing previous and next reviews.
+                    <br />2: Add a button which shows a random button.
                 </div>
             </Banner>    
         </SimpleHero>            
