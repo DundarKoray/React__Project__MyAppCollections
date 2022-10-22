@@ -13,7 +13,7 @@ const Tours = ({tours, removeTour}) => {
       </div>
       <div>
         {tours.map((tour) => {
-          console.log(tour);
+          // console.log(tour);
           return <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>
         })}
       </div>
