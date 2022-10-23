@@ -6,6 +6,7 @@ import styles from './review.module.scss'
 
 const Review = () => {
   console.log(people);
+  console.log(people.length);
 
   const [index, setIndex] = useState(0);
   const {name, job, image, text} = people[index];
@@ -13,15 +14,26 @@ const Review = () => {
   const nextReview = () => {
     setIndex((index) => {
       let newIndex = index + 1
-      return newIndex;
+      return numberCheck(newIndex);
     })
   }
 
   const previousReview = () => {
     setIndex((index) => {
       let newIndex = index - 1
-      return newIndex;
+      return numberCheck(newIndex);
     })
+  }
+
+  const numberCheck = (number) => {
+    if (number < 0) {
+      return people.length - 1;
+    } 
+    else if (number > people.length - 1) {
+      return 0;
+    }
+
+    return number;
   }
 
   return (
