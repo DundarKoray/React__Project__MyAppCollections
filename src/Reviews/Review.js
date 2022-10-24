@@ -32,13 +32,26 @@ const Review = () => {
     else if (number > people.length - 1) {
       return 0;
     }
-
     return number;
+  }
+
+  const randomPerson = () => {
+    let range = people.length;
+    let randomNumber = Math.floor(Math.random() * range);
+    if(randomNumber === index) {
+      randomNumber = index + 1;
+    }
+    setIndex(numberCheck(randomNumber));
   }
 
   return (
     <div className={styles.review}>
-      <img src={image} className={styles.image} alt={name}/>
+      <div className={styles.imgContainer}>
+        <img src={image} className={styles.image} alt={name}/>
+        <div className={styles.quoteContainer}>
+          <FaQuoteRight className={styles.quoteIcon} />
+        </div>
+      </div>
       <h2 className='name'>{name}</h2>
       <h6 className='occupation'>{job}</h6>
       <p className={styles.text}>{text}</p>
@@ -46,7 +59,7 @@ const Review = () => {
         <a onClick={() => previousReview()}><FaChevronLeft className={styles.previous} /></a>
         <a onClick={() => nextReview()}><FaChevronRight className={styles.next} /></a>
       </div>
-      <button className='btn-primary'>Get a random review</button>
+      <button className='btn-primary' onClick={() => randomPerson()}>Get a random review</button>
     </div>
   )
 };
