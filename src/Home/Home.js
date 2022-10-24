@@ -50,7 +50,7 @@ const Home = () => {
             Employees
           </Link>
           <Link className="btn-primary" to="/frequentlyAskedQuestions">
-            Freqeuntly Asked Questions
+            Accordions FAQ
           </Link>
         </div>
       </Banner>

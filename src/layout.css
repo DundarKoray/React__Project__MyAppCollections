@@ -43,7 +43,8 @@ a {
 
 .btn-white,
 .btn-primary {
-  margin-bottom: .2rem;
+  margin: .5rem;
+  min-width: 300px;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   outline: none;
