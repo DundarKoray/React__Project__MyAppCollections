@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import people from './data';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
-import styles from './review.module.scss'
+import styles from './employees.module.scss'
 
 
 const Review = () => {

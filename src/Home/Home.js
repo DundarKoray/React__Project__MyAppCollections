@@ -12,96 +12,45 @@ const Home = () => {
         info="Welcome to my coding playground! Here are few small fun React apps."
       >
         <div className="home-center">
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/flipCoin"
-          >
+          <Link className="btn-primary" to="/flipCoin">
             Flip A Coin
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/hangMan"
-          >
+          <Link className="btn-primary" to="/hangMan">
             Hang Man
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/colorBoxes"
-          >
+          <Link className="btn-primary" to="/colorBoxes">
             Color Boxes
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/boxGenerator"
-          >
+          <Link className="btn-primary" to="/boxGenerator">
             Box Generator
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/slotMachine"
-          >
+          <Link className="btn-primary" to="/slotMachine">
             Slot Machine
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/toDoList"
-          >
+          <Link className="btn-primary" to="/toDoList">
             ToDo List
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/flipCoinV2"
-          >
+          <Link className="btn-primary" to="/flipCoinV2">
             FlipCoin V2
           </Link>
-          {/* <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/whatToEat"
-          >
-            What to Eat
-          </Link> */}
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/whatToEatV2"
-          >
+          
+          <Link className="btn-primary" to="/whatToEatV2">
             What to Eat V2
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/dadJokes"
-          >
+          <Link className="btn-primary" to="/dadJokes">
             Dad Jokes
           </Link>
-          <Link
-            style={{ margin: "10px", width: "250px" }}
-            className="btn-primary"
-            to="/drinkingGame"
-          >
+          <Link className="btn-primary" to="/drinkingGame">
             Drinking Game
           </Link>
-          <Link 
-            style={{ margin: "10px", width: "250px"}}
-            className="btn-primary"
-            to="/tours"
-          >
+          <Link className="btn-primary" to="/tours">
             Tours
           </Link>
-          <Link 
-            style={{ margin: "10px", width: "250px"}}
-            className="btn-primary"
-            to="/reviews"
-          >
-            Reviews
+          <Link className="btn-primary" to="/employees">
+            Employees
+          </Link>
+          <Link className="btn-primary" to="/frequentlyAskedQuestions">
+            Freqeuntly Asked Questions
           </Link>
         </div>
       </Banner>

@@ -3,7 +3,7 @@ import Banner from "../Banner/Banner";
 import { useState, useEffect } from 'react'
 import InnerNavBar from "../InnerNavBar/InnerNavBar";
 import styles from './app.module.scss';
-import Review from './Review';
+import Review from './Employees';
 import Title from '../Title/Title';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                         <br />3: Add a random button which shows a random review when clicking it.
                     </div>
                     <main> 
-                        <Title title={'Our Reviews'} />
+                        <Title title={'Our Employees'} />
                         <Review />
                     </main>
                 </Banner>    

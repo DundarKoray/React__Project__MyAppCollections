@@ -1,4 +1,4 @@
-const reviews = [
+const employees = [
   {
     id: 1,
     name: 'susan smith',
@@ -37,4 +37,4 @@ const reviews = [
   },
 ];
 
-export default reviews;
+export default employees;
