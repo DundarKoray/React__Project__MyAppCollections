@@ -1,9 +1,15 @@
 import { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
-const Question = () => {
+import styles from './question.module.scss';
+
+const Question = ({id, title, info}) => {
+  
   return (
-    <div>Hello from question</div>
+    <div className={styles.questionContainer}>
+      <h4 className={styles.question}>{title}</h4>
+      <AiOutlinePlus />
+    </div>
   );
 };
 

@@ -4,7 +4,6 @@
   width: 100%;
 }
 
-
 .banner-title {
   font-size: 3.3rem;
   text-transform: uppercase;
@@ -16,6 +15,7 @@
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+
 @media screen and (min-width: 768px) {
   .banner-title {
     font-size: 4.5rem;
@@ -34,4 +34,4 @@
   .banner {
     padding: .1rem;
   }
-  }
+}

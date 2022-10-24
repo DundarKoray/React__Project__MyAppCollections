@@ -1,12 +1,12 @@
 
-import styles from './simpleHero.module.css'
+import styles from './simpleHero.module.scss'
 
 
 const SimpleHero = ({children}) => {
     return (
-        <header className={styles.defaultHero}>
+        <main className={styles.defaultHero}>
             {children}
-        </header>
+        </main>
     );
 };
 

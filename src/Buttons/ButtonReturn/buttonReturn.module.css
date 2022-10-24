@@ -1,12 +1,3 @@
-:root {
-  --primaryColor: #d4a53f;
-  --mainWhite: #fff;
-  --mainTransition: all 0.3s linear;
-  --mainSpacing: 4px;
- 
-  
-}
-
 .btn {
   color: var(--mainWhite);
   padding: 0.5rem 1rem;
