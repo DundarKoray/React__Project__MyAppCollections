@@ -16,7 +16,8 @@ import DadJokes from "./DadJokes/App";
 import DrinkingGame from "./DrinkingGame/App";
 import Tours from "./Tours/App";
 import Employees from "./Employees/App";
-import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions/App"
+import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions/App";
+import FoodMenu from "./FoodMenu/App";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/tours" component={Tours} exact />
           <Route path="/employees" component={Employees} exact />
           <Route path="/frequentlyAskedQuestions" component={FrequentlyAskedQuestions} exact />
+          <Route path="/foodMenu" component={FoodMenu} exact />
         </Switch>
       </Layout>
     </BrowserRouter>

@@ -52,6 +52,9 @@ const Home = () => {
           <Link className="btn-primary" to="/frequentlyAskedQuestions">
             Accordions FAQ
           </Link>
+          <Link className="btn-primary" to="/foodMenu">
+            Food Menu
+          </Link>
         </div>
       </Banner>
     </SimpleHero>
