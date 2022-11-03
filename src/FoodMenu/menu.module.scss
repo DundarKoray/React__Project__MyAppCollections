@@ -1,0 +1,21 @@
+.menuList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 2rem;
+}
+.menuItem {
+    display: grid;
+    grid-template-columns: 1fr 225px;
+    gap: 0 1rem;
+    img {
+        height: 200px;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    } 
+
+    .titleAndPrice {
+        display: flex;
+        justify-content: space-between;
+    }
+}

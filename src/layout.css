@@ -75,6 +75,10 @@ a {
   color: var(--primaryColor);
 }
 
+.goals {
+  margin-bottom: 1rem;
+}
+
 /* .gatsby-image-wrapper {
   max-height: 600px;
   box-shadow: var(--lightShadow);

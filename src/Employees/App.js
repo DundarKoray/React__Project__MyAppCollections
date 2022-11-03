@@ -13,7 +13,7 @@ function App() {
             <SimpleHero>
                 <Banner>
                     <InnerNavBar />
-                    <div className={styles.goals}>
+                    <div className="goals">
                         Goals
                         <br />1: Fetch the data from local JSON API and list only one review at a time.
                         <br />2: Add buttons by using React Icons for showing previous and next review.
