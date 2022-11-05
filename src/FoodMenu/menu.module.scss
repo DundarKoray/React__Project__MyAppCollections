@@ -4,18 +4,36 @@
     gap: 3rem 2rem;
 }
 .menuItem {
+    color: black;
     display: grid;
-    grid-template-columns: 1fr 225px;
+    grid-template-columns: 1fr 280px;
     gap: 0 1rem;
+
     img {
         height: 200px;
         width: 100%;
         display: block;
         object-fit: cover;
     } 
-
+    
     .titleAndPrice {
         display: flex;
         justify-content: space-between;
+        padding-bottom: .2rem;
+        border-bottom: 1px solid var(--primaryColor);
+        
+        .title {
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .price {
+            
+        }
+    }
+
+    .description {
+        margin-top: 1rem;
     }
 }

@@ -1,9 +1,9 @@
 import styles from './title.module.scss'
 
-const Title = ({title}) => {
+const Title = ({title, dark}) => {
   return (
     <div className={styles.title}>
-        <h1>{title}</h1>
+        {dark ? <h1 className={styles.dark}>{title}</h1> : <h1>{title}</h1> }
         <div className={styles.underline}></div>
     </div>
   )

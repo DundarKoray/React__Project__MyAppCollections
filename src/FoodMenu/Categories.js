@@ -1,7 +1,14 @@
-import React from 'react';
+import styles from './categories.module.scss';
 
-const Categories = () => {
-  return <h2>categories component</h2>;
+const Categories = ({filterItems}) => {
+  return (
+    <div className={styles.buttonsContainer}>
+      <button>All</button>
+      <button onClick={()=>filterItems}>Breakfast</button>
+      <button>Lunch</button>
+      <button>Shakes</button>
+    </div>
+  );
 };
 
 export default Categories;

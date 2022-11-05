@@ -1,0 +1,15 @@
+.buttonsContainer {
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+
+    button {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--primaryColor);
+        background-color: transparent;
+        border: none;
+        padding: 1rem 2rem;
+        cursor: pointer;
+    }
+}

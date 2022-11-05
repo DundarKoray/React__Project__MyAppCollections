@@ -8,10 +8,18 @@ import Banner from '../Banner/Banner';
 import InnerNavBar from '../InnerNavBar/InnerNavBar';
 import Title from '../Title/Title';
 
+import styles from './app.module.scss';
+
 function App() {
 
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState();
+
+  const filterItems = (category) => {
+    let newItems = items.filter((item)=> item.category === category)
+    setMenuItems(newItems);
+  }
+
   return (  
     <SimpleHero>
       <Banner>
@@ -22,9 +30,11 @@ function App() {
           <br />2: Add buttons by using React Icons for showing previous and next review.
           <br />3: Add a random button which shows a random review when clicking it.
         </div>
-        <Title title={'Our Menu'} />
-        <Categories />
-        <Menu items={menuItems} />
+        <div className={styles.app}>
+          <Title dark={true} title={'Our Menu'} />
+          <Categories filterItems={filterItems} />
+          <Menu items={menuItems} />
+        </div>
       </Banner>
     </SimpleHero>
   );

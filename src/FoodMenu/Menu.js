@@ -13,10 +13,10 @@ const Menu = ({items}) => {
             <img src={img} alt={title} />
             <div>
               <div className={styles.titleAndPrice}>
-                <h2>{title}</h2>
-                <div>{price}</div>
+                <h2 className={styles.title}>{title}</h2>
+                <div className={styles.price}>{price}</div>
               </div>
-              <div>{desc}</div>
+              <div className={styles.description}>{desc}</div>
             </div>
           </div>
         )
