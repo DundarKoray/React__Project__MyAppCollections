@@ -18,6 +18,9 @@ function App() {
   const filterItems = (category) => {
     let newItems = items.filter((item)=> item.category === category)
     setMenuItems(newItems);
+    if(category === 'all'){
+      setMenuItems(items);
+    }
   }
 
   return (  

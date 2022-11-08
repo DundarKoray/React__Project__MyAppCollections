@@ -3,7 +3,7 @@ import styles from './menu.module.scss';
 
 const Menu = ({items}) => {
   // console.log(props);
-  console.log(items);
+  // console.log(items);
   return (
     <div className={styles.menuList}>
       {items.map(item => {
