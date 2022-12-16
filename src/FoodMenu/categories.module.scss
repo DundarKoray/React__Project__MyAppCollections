@@ -11,5 +11,11 @@
         border: none;
         padding: 1rem 2rem;
         cursor: pointer;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: var(--primaryColor);
+            color: white;
+        }
     }
 }
