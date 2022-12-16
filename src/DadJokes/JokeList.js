@@ -95,7 +95,7 @@ class JokeList extends Component {
               
               
               <Animated animationIn="shake" animationOut="shake" animationInDuration={5000} animationOutDuration={5000} isVisible={true}>
-              <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
+              <img alt="shake icon" src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
 </Animated>
               <button className={styles.getMoreButton} onClick={this.handleClick}>New Jokes</button>
             </div>
@@ -133,7 +133,6 @@ class JokeList extends Component {
               )}
             </div>
           </div>{" "}
-          }
         </div>
       </div>
     );
