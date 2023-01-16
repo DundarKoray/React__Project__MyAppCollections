@@ -5,9 +5,16 @@ import InnerNavBar from '../InnerNavBar/InnerNavBar';
 import Title from '../Title/Title';
 import styles from './app.module.scss';
 
+//API
 const url = 'https://course-api.com/react-tabs-project'
 
 function App() {
+
+  //loading and initial value is true
+  const [loading, setLoading] = useState(false);
+  
+  //jobs and initial value is empty array
+  const [jobs, setJobs] = useState([" "]);
 
   return (  
     <SimpleHero>
