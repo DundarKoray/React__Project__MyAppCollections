@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SimpleHero from '../SimpleHero/SimpleHero';
 import Banner from '../Banner/Banner';
 import InnerNavBar from '../InnerNavBar/InnerNavBar';
@@ -18,6 +18,20 @@ function App() {
 
   //values and initial value is 0
   const [value, setValue] = useState(0);
+
+  //fetch jobs function
+  const fetchJobs = () => {
+    const fetchJobs = async () => {
+      const reponse = await fetch(url)
+      const newJobs = await reponse.json()
+      setJobs(newJobs)
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    fetchJobs()
+  }, [])
 
   return (  
     <SimpleHero>
