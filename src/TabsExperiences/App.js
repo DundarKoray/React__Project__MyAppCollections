@@ -44,8 +44,13 @@ function App() {
           <br />3: .
         </div>
         <div className={styles.app}>
-          <Title dark={true} title={'Tabs Experiences'} />
-          
+          {
+            loading ?
+              <section className='loading'>
+                <h1>Loading...</h1>
+              </section> 
+            : <Title dark={true} title={'Tabs Experiences'} />
+          }
         </div>
       </Banner>
     </SimpleHero>
