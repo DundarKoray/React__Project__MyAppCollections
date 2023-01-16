@@ -14,7 +14,10 @@ function App() {
   const [loading, setLoading] = useState(false);
   
   //jobs and initial value is empty array
-  const [jobs, setJobs] = useState([" "]);
+  const [jobs, setJobs] = useState([]);
+
+  //values and initial value is 0
+  const [value, setValue] = useState(0);
 
   return (  
     <SimpleHero>
