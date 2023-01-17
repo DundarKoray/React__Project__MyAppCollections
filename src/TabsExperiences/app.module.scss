@@ -29,7 +29,6 @@
 .jobDesc {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-column-gap: 2rem;
     column-gap: 2rem;
     align-items: center;
     margin-bottom: 1.25rem;
@@ -37,4 +36,34 @@
 
 .jobIcon {
     color: var(--primaryColor);
+}
+
+.jobCenter {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 4rem;
+
+    .btnContainer {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            color: white;
+            background: transparent;
+            border-color: transparent;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            letter-spacing: .1rem;
+            transition: all .3s linear;
+            cursor: pointer;
+            padding: 0.25rem 0;
+            line-height: 1;
+            outline-color: var(--primaryColor);
+        }
+
+        .activeButton {
+            box-shadow: -2px 0 var(--primaryColor);
+        }
+    }
 }
