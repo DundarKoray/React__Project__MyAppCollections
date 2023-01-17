@@ -50,13 +50,13 @@ const Home = () => {
             Employees
           </Link>
           <Link className="btn-primary" to="/frequentlyAskedQuestions">
-            Accordions FAQ
+            Accordions: FAQ
           </Link>
           <Link className="btn-primary" to="/foodMenu">
             Food Menu
           </Link>
           <Link className="btn-primary" to="/tabsExperiences">
-            Tabs Experiences
+            Tabs: Job Experiences
           </Link>
         </div>
       </Banner>
