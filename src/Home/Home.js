@@ -58,6 +58,9 @@ const Home = () => {
           <Link className="btn-primary" to="/tabsJobExperiences">
             Tabs: Job Experiences
           </Link>
+          <Link className="btn-primary" to="/tabsJobExperiences">
+            Slider: Reviews
+          </Link>
         </div>
       </Banner>
     </SimpleHero>

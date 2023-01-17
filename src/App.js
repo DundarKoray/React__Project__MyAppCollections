@@ -19,6 +19,7 @@ import Employees from "./Employees/App";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions/App";
 import FoodMenu from "./FoodMenu/App";
 import TabsJobExperiences from "./TabsJobExperiences/App";
+import SliderReviews from "./SliderReviews/App";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/frequentlyAskedQuestions" component={FrequentlyAskedQuestions} exact />
           <Route path="/foodMenu" component={FoodMenu} exact />
           <Route path="/tabsJobExperiences" component={TabsJobExperiences} exact />
+          <Route path="/sliderReviews" component={SliderReviews} exact />
         </Switch>
       </Layout>
     </BrowserRouter>
