@@ -1,0 +1,67 @@
+.app {
+    // background-color: white;
+}
+
+.sectionCenter {
+    position: relative;
+
+    .personImage {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: block;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 4px solid #bcccdc;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+    }
+
+    .name {
+        text-transform: uppercase;
+        color: #ba5d2c;
+        margin-bottom: 0.25rem;
+    }
+
+    .title {
+
+    }
+
+    .text {
+
+    }
+
+    .quoteIcon {
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: #ba5d2c;
+    }
+
+    .prevButton, .nextButton {
+        position: absolute;
+        top: 200px;
+        transform: translateY(-50%);
+        background: #617d98;
+        color: #fff;
+        width: 1.25rem;
+        height: 1.25rem;
+        display: grid;
+        place-items: center;
+        border-color: transparent;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: all .3s linear;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .prevButton {
+        left: 0;
+    }
+
+    .nextButton {
+        right: 0;
+    }
+}
+
