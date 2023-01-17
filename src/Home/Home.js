@@ -58,7 +58,7 @@ const Home = () => {
           <Link className="btn-primary" to="/tabsJobExperiences">
             Tabs: Job Experiences
           </Link>
-          <Link className="btn-primary" to="/tabsJobExperiences">
+          <Link className="btn-primary" to="/sliderReviews">
             Slider: Reviews
           </Link>
         </div>
