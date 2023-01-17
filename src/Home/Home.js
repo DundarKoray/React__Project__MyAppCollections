@@ -55,7 +55,7 @@ const Home = () => {
           <Link className="btn-primary" to="/foodMenu">
             Food Menu
           </Link>
-          <Link className="btn-primary" to="/tabsExperiences">
+          <Link className="btn-primary" to="/tabsJobExperiences">
             Tabs: Job Experiences
           </Link>
         </div>
