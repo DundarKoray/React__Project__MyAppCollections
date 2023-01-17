@@ -43,8 +43,8 @@ function App() {
           <div className="goals">
             Goals
             <br />1: Fetch the data from an API.
-            <br />2: .
-            <br />3: .
+            <br />2: Create buttons with company names from API, on the left side.
+            <br />3: When you click the button, show the job details, on the right side.
           </div>
           <div className={styles.app}>
             {
