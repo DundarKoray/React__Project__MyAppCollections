@@ -33,7 +33,8 @@ function App() {
         <div className="goals">
           Goals
           <br />1: Fetch the data from local JSON API and list all the foods.
-          <br />2: Add buttons by 'All' which shows all the dishes, and other buttons type of the dishes from JSON API, remove duplicate buttons.
+          <br />2: Add button 'All' manually which shows all the dishes, and generate buttons type of the dishes from JSON API, remove duplicate buttons.
+          <br />3: When you click buttons, render correct dishes.
         </div>
         <div className={styles.app}>
           <Title dark={true} title={'Our Menu'} />
