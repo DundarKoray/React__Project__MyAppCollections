@@ -32,9 +32,8 @@ function App() {
         <InnerNavBar />
         <div className="goals">
           Goals
-          <br />1: Fetch the data from local JSON API and list only one review at a time.
-          <br />2: Add buttons by using React Icons for showing previous and next review.
-          <br />3: Add a random button which shows a random review when clicking it.
+          <br />1: Fetch the data from local JSON API and list all the foods.
+          <br />2: Add buttons by 'All' which shows all the dishes, and other buttons type of the dishes from JSON API, remove duplicate buttons.
         </div>
         <div className={styles.app}>
           <Title dark={true} title={'Our Menu'} />
