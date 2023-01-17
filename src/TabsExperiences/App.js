@@ -49,7 +49,7 @@ function App() {
           <div className={styles.app}>
             {
               <div>
-                <Title dark={true} title={'Tabs Experiences'} />
+                <Title dark={true} title={'Job Experiences'} />
                 <article className='jobInfo'>
                     <section className='loading'>
                       <h1>Loading...</h1>
@@ -73,25 +73,33 @@ function App() {
         <div className="goals">
           Goals
           <br />1: Fetch the data from an API.
-          <br />2: .
-          <br />3: .
+          <br />2: Create buttons with company names from API, on the left side.
+          <br />3: When you click the button, show the job details, on the right side.
         </div>
         <div className={styles.app}>
           <div>
-            <Title dark={true} title={'Tabs Experiences'} />
-            <article className={styles.jobInfo}>
-              <h3>{title}</h3>
-              <h4>{company}</h4>
-              <p className={styles.jobDate}>{dates}</p>
-              {duties.map((duty, index) => {
-                return (
-                  <div key={index} className={styles.jobDesc}> 
-                    <FaAngleDoubleRight className={styles.jobIcon} />
-                    <p>{duty}</p>
-                  </div>
-                )
-              })}
-            </article>
+            <Title dark={true} title={'Job Experiences'} />
+            <div className={styles.jobCenter}>
+              {/* Btn container */}
+              <div className={styles.btnContainer}>
+                {jobs.map((item, index) => {
+                  return <button className={index === value && styles.activeButton} onClick={()=>setValue(index)} key={index}>{item.company}</button>
+                })}
+              </div>
+              <article className={styles.jobInfo}>
+                <h3>{title}</h3>
+                <h4>{company}</h4>
+                <p className={styles.jobDate}>{dates}</p>
+                {duties.map((duty, index) => {
+                  return (
+                    <div key={index} className={styles.jobDesc}> 
+                      <FaAngleDoubleRight className={styles.jobIcon} />
+                      <p>{duty}</p>
+                    </div>
+                  )
+                })}
+              </article>
+            </div>
           </div>
         </div>
       </Banner>
