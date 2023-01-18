@@ -32,7 +32,7 @@ function App() {
         let slider = setInterval(() => {
           setIndex(index + 1);
         }, 5000);
-        
+
         return () => {
           clearInterval(slider);
         };
@@ -45,7 +45,7 @@ function App() {
         <div className="goals">
             Goals
             <br />1: Fetch the data from data.js in project folder.
-            <br />2: Make a slider
+            <br />2: Make a slider with buttons
             <br />3: Make autoplay feature so the slides changes every 5 seconds
         </div>
         <div className={styles.app}>
